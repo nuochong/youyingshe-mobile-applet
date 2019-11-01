@@ -21,9 +21,12 @@ export default {
 
     }
   },
-  created() {}
+  created() {
+    
+  }
 };
 </script>
 
 <style lang="scss" scoped>
+
 </style>
