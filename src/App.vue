@@ -31,6 +31,8 @@ export default {
 </script>
 
 <style>
+/* @import '../static/css/iconfont.css'; */
+
 .container {
   height: 100%;
   display: flex;
@@ -46,5 +48,11 @@ export default {
   -moz-transition: width 2s;
   -webkit-transition: width 2s;
   -o-transition: width 2s;
+}
+
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 </style>
