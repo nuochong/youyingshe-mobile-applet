@@ -48,7 +48,6 @@ export default {
 }
 </script>
 
-<style scoped>
 <style lang="scss" scoped>
 .log-list {
   display: flex;

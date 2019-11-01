@@ -30,8 +30,6 @@ export default {
 }
 </script>
 
-<style>
-/* @import '../static/css/iconfont.css'; */
 <style lang="scss" scoped>
 @import '../static/css/iconfont.css';
 

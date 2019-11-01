@@ -25,7 +25,5 @@ export default {
   i{
 
   }
-.card {
-  padding: 10px;
 }
 </style>
