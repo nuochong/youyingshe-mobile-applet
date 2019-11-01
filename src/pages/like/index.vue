@@ -1,11 +1,11 @@
 <template>
-  <div>
-    <card :text="title"></card>
+  <div class="like-container">
+    <card-article-list></card-article-list>
   </div>
 </template>
 
 <script>
-import card from '@/components/card';
+import cardArticleList from '@/components/card-article-list';
 
 export default {
   data() {
@@ -14,19 +14,16 @@ export default {
     };
   },
   components: {
-    card
+    cardArticleList
   },
   methods: {
-    sample() {
-
-    }
+    sample() {}
   },
-  created() {
-
-  }
+  created() {}
 };
 </script>
 
 <style lang="scss" scoped>
-
+.like-container {
+}
 </style>

@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import App from './App';
 import store from './store';
-import VueRouter from 'vue-router-mp'
+// import VueRouter from 'vue-router-mp'
 import bus from './eventBus';
 import CommonGolbal from '../static/js/common.js';
 
@@ -10,7 +10,7 @@ App.mpType = 'app';
 
 Vue.prototype.bus = bus;
 Vue.prototype.$store = store;
-Vue.use(VueRouter)
+// Vue.use(VueRouter)
 Vue.use(CommonGolbal);
 
 const app = new Vue(App);
