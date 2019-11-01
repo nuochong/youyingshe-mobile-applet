@@ -1,6 +1,6 @@
 <script>
 export default {
-  created () {
+  created() {
     // 调用API从本地缓存中获取数据
     /*
      * 平台 api 差异的处理方式:  api 方法统一挂载到 mpvue 名称空间, 平台判断通过 mpvuePlatform 特征字符串
@@ -10,28 +10,28 @@ export default {
      * 支付宝(蚂蚁)：mpvue === my, mpvuePlatform === 'my'
      */
 
-    let logs
+    let logs;
     if (mpvuePlatform === 'my') {
-      logs = mpvue.getStorageSync({key: 'logs'}).data || []
-      logs.unshift(Date.now())
+      logs = mpvue.getStorageSync({ key: 'logs' }).data || [];
+      logs.unshift(Date.now());
       mpvue.setStorageSync({
         key: 'logs',
         data: logs
-      })
+      });
     } else {
-      logs = mpvue.getStorageSync('logs') || []
-      logs.unshift(Date.now())
-      mpvue.setStorageSync('logs', logs)
+      logs = mpvue.getStorageSync('logs') || [];
+      logs.unshift(Date.now());
+      mpvue.setStorageSync('logs', logs);
     }
   },
-  log () {
-    console.log(`log at:${Date.now()}`)
+  log() {
+    console.log(`log at:${Date.now()}`);
   }
-}
+};
 </script>
 
-<style lang="scss" scoped>
-@import '../static/css/iconfont.css';
+<style lang="scss">
+@import '../static/css/iconfont/iconfont.css';
 
 .container {
   height: 100%;
@@ -50,9 +50,15 @@ export default {
   -o-transition: width 2s;
 }
 
-*, :after, :before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+*,
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+//处理默认样式
+i {
+  display: inline-block;
 }
 </style>

@@ -1,0 +1,44 @@
+{
+  "id": "1357345",
+  "name": "youyingshe-mobile-applet",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "移动端小程序",
+  "glyphs": [
+    {
+      "icon_id": "491582",
+      "name": "钻石",
+      "font_class": "zuanshi",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
+      "icon_id": "592007",
+      "name": "add",
+      "font_class": "add",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "1584267",
+      "name": "钻石",
+      "font_class": "diamond",
+      "unicode": "e628",
+      "unicode_decimal": 58920
+    },
+    {
+      "icon_id": "1881191",
+      "name": "comment",
+      "font_class": "liuyan",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "5125936",
+      "name": "like",
+      "font_class": "home_ico_like-",
+      "unicode": "e622",
+      "unicode_decimal": 58914
+    }
+  ]
+}

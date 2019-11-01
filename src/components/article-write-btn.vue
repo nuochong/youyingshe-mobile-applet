@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="article-write-btn-wrap">
     <button class="article-write-btn">
       <i class="iconfont iconadd"></i>
       写文章
@@ -10,20 +10,28 @@
 <script>
 export default {
   props: ['text']
-}
+};
 </script>
 
 <style lang="scss" scoped>
-.article-write-btn{
-  position: absolute;
-  height: 50px;
-  line-height:50px;
-  color:white;
-  font-size: 24px;
-  background-color: blue;
-  border-radius:25px;
-  i{
+.article-write-btn {
+  height: 40px;
+  line-height: 40px;
+  width: 140px;
 
-  }
+  color: white;
+  font-size: 18px;
+  background-color: #ea6f5a;
+  border-radius: 25px;
+  display: inline-block;
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  margin-left: -70px;
+  font-weight: bold;
+
+  -moz-box-shadow: 5px 5px 15px #6e6e6e;
+  -webkit-box-shadow: 5px 5px 15px #6e6e6e;
+  box-shadow: 5px 5px 15px #6e6e6e;
 }
 </style>

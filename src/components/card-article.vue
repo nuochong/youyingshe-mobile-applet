@@ -1,6 +1,6 @@
 <template>
   <div class="card-article note-flow have-img">
-    <section href="/p/b959acd0f338"
+    <section href="/p/b959acd0f338" @click="target()"
       class="content"><span class="wrap-img inline-3MDdF_0"><img
           src="https://upload-images.jianshu.io/upload_images/10760922-75c501d5d36e9d15.png?imageMogr2/auto-orient/strip|imageView2/1/w/160/h/160/format/webp"></span>
       <div class="summary">
@@ -24,8 +24,28 @@
 </template>
 
 <script>
+
 export default {
-  props: ['text']
+  props: ['text'],
+  data() {
+    return {
+      title: 'components'
+    };
+  },
+  components: {
+
+  },
+  methods: {
+    toast() {
+      this.toastNone('测试信息');
+    },
+    target() {
+      wx.navigateTo({url: '/pages/article/main'})
+    }
+  },
+  created() {
+    this.test();
+  }
 };
 </script>
 
