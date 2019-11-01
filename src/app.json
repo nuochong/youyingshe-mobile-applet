@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/clipImage/main",
+    "pages/fullPlayer/main",
     "pages/navigation/main",
     "pages/index/main",
     "pages/logs/main",
