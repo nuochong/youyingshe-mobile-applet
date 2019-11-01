@@ -22,7 +22,7 @@ export default {
     }
   },
   created() {
-
+    this.test();
   }
 };
 </script>

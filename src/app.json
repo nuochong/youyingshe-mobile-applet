@@ -1,12 +1,12 @@
 {
   "pages": [
+    "pages/home/main",
     "pages/article/main",
     "pages/history/main",
     "pages/like/main",
     "pages/login/main",
     "pages/my/main",
     "pages/write/main",
-    "pages/home/main",
 
     "pages/template/main",
     "pages/index/main",
