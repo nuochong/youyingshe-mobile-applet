@@ -1,6 +1,6 @@
 <template>
   <div>
-    <card :text="motto"></card>
+    <card :text="title"></card>
   </div>
 </template>
 
@@ -10,7 +10,7 @@ import card from '@/components/card';
 export default {
   data() {
     return {
-      title: ''
+      title: 'components'
     };
   },
   components: {
@@ -22,7 +22,7 @@ export default {
     }
   },
   created() {
-    
+
   }
 };
 </script>
