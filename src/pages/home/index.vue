@@ -1,6 +1,7 @@
 <template>
   <div>
     <card :text="title"></card>
+    <button @click="toast()">toast</button>
   </div>
 </template>
 
@@ -17,6 +18,9 @@ export default {
     card
   },
   methods: {
+    toast(){
+      this.toastNone('测试信息');
+    },
     sample() {
 
     }

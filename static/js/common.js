@@ -1,6 +1,7 @@
 export default {
   install(Vue, options) {
     Vue.prototype.url = 'test common global';
+    
     //去除前后空格
     Vue.prototype.trim = function(str) {
       return str.replace(/(^\s*)|(\s*$)/g, '');
