@@ -1,8 +1,9 @@
 <template>
   <div>
-    <p class="card">
-      {{text}}
-    </p>
+    <button class="article-write-btn">
+      <i class="iconfont iconadd"></i>
+      写文章
+    </button>
   </div>
 </template>
 
@@ -12,7 +13,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 .card {
   padding: 10px;
 }

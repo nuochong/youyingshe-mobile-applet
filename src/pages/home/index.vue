@@ -1,12 +1,28 @@
 <template>
   <div>
-    <card :text="title"></card>
+    <ul class="flow-list-ul">
+      <li>
+        <card-article></card-article>
+      </li>
+      <li>
+        <card-article></card-article>
+      </li>
+      <li>
+        <card-article></card-article>
+      </li>
+      <li>
+        <card-article></card-article>
+      </li>
+    </ul>
+    <article-write-btn></article-write-btn>
+
     <button @click="toast()">toast</button>
   </div>
 </template>
 
 <script>
-import card from '@/components/card';
+import cardArticle from '@/components/card-article';
+import articleWriteBtn from '@/components/article-write-btn';
 
 export default {
   data() {
@@ -15,15 +31,14 @@ export default {
     };
   },
   components: {
-    card
+    cardArticle,
+    articleWriteBtn
   },
   methods: {
-    toast(){
+    toast() {
       this.toastNone('测试信息');
     },
-    sample() {
-
-    }
+    sample() {}
   },
   created() {
     this.test();
@@ -32,5 +47,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.flow-list-ul {
+  position: relative;
+  min-height: 100%;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
 </style>
