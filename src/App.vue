@@ -32,6 +32,8 @@ export default {
 
 <style>
 /* @import '../static/css/iconfont.css'; */
+<style lang="scss" scoped>
+@import '../static/css/iconfont.css';
 
 .container {
   height: 100%;
