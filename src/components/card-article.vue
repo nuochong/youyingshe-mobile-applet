@@ -1,30 +1,46 @@
 <template>
-  <div class="card-article note-flow have-img">
-    <section href="/p/b959acd0f338" @click="target()"
-      class="content"><span class="wrap-img inline-3MDdF_0"><img
-          src="https://upload-images.jianshu.io/upload_images/10760922-75c501d5d36e9d15.png?imageMogr2/auto-orient/strip|imageView2/1/w/160/h/160/format/webp"></span>
-      <div class="summary">
-        <h6 class="title">
-
-          R-ggplot2-如何将map与其他类型图表绘制在一张图里
-        </h6>
-        <p class="abstract">0. 今日绘图目标 将map与柱状图绘制在一张图中。 1. 所需R-packages 2. 示例数据
-          2.1 re...</p>
+  <div class="article-card-container">
+    <div href="/u/548acb57ddbb" class="info"><img
+        src="https://upload.jianshu.io/users/upload_avatars/17593283/1417dbeb-1561-4a6f-b15a-032f74913f35.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/180/h/180/format/webp"
+        class="user-avatar">
+      <div class="user-content">
+        <div class="user-nickname">
+          <div class="nickname">
+            <p class="oneline">路人甲</p>
+          </div><span class="label badge-item"> 简书作者</span>
+        </div>
       </div>
-    </section>
-    <div class="meta oneline">
-      <i class="iconfont ic-icon_jewel icondiamond"></i><span>0.515</span><span
-        class="name">TroyShen</span><span><i
-          class="iconfont ic-list-comments iconliuyan"></i>
-        1
-      </span><span><i class="iconfont ic-list-like iconhome_ico_like-"></i>
-        7
-      </span></div>
+    </div>
+
+    <div class="card-article note-flow have-img">
+
+      <section href="/p/b959acd0f338" @click="target()" class="content"><span
+          class="wrap-img inline-3MDdF_0"><img
+            src="https://upload-images.jianshu.io/upload_images/10760922-75c501d5d36e9d15.png?imageMogr2/auto-orient/strip|imageView2/1/w/160/h/160/format/webp"></span>
+        <div class="summary">
+          <h6 class="title">
+
+            R-ggplot2-如何将map与其他类型图表绘制在一张图里
+          </h6>
+          <p class="abstract">0. 今日绘图目标 将map与柱状图绘制在一张图中。 1. 所需R-packages 2. 示例数据
+            2.1 re...</p>
+        </div>
+      </section>
+      <div class="meta oneline">
+        <i
+          class="iconfont ic-icon_jewel icondiamond"></i><span>0.515</span><span
+          class="name">TroyShen</span><span><i
+            class="iconfont ic-list-comments iconliuyan"></i>
+          1
+        </span><span><i class="iconfont ic-list-like iconhome_ico_like-"></i>
+          7
+        </span></div>
+    </div>
   </div>
+
 </template>
 
 <script>
-
 export default {
   props: ['text'],
   data() {
@@ -32,15 +48,13 @@ export default {
       title: 'components'
     };
   },
-  components: {
-
-  },
+  components: {},
   methods: {
     toast() {
       this.toastNone('测试信息');
     },
     target() {
-      wx.navigateTo({url: '/pages/article/main'})
+      wx.navigateTo({ url: '/pages/article/main' });
     }
   },
   created() {
@@ -50,11 +64,66 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.info {
+  padding: 15px 18px 0px 18px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  .user-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 17px;
+    float: left;
+    margin-right: 5px;
+  }
+  img {
+    max-width: 100%;
+    border-style: none;
+  }
+  .user-content {
+    overflow: hidden;
+    .user-nickname {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      font-size:16px;
+      .nickname {
+        overflow: hidden;
+        margin-right: 5px;
+      }
+    }
+  }
+}
 .note-flow {
   position: relative;
   width: 100%;
   word-wrap: break-word;
-  padding: 15px 18px;
+  //padding: 15px 18px;
+  padding: 5px 18px 15px 18px;
   border-bottom: 1px solid;
   font-size: 0;
   border-color: #f0f0f0;
