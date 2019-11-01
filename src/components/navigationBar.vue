@@ -152,8 +152,8 @@ export default {
             }
             .opt-back {
                 .back-image {
-                width: 16rpx;
-                height: 28rpx;
+                width: 34rpx;
+                height: 34rpx;
                 }
             }
             .line {
@@ -164,7 +164,7 @@ export default {
             }
             .opt-home {
                 .home-image {
-                width: 36rpx;
+                width: 34rpx;
                 height: 34rpx;
                 }
             }
