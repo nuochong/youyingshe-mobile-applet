@@ -1,11 +1,12 @@
 {
   "pages": [
-    "pages/clipImage/main",
+    "pages/index/main",
     "pages/fullPlayer/main",
     "pages/navigation/main",
-    "pages/index/main",
+    
     "pages/logs/main",
-    "pages/counter/main"
+    "pages/counter/main",
+    "pages/clipImage/main"
     
   ],
   "window": {
