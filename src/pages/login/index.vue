@@ -11,7 +11,7 @@
           <input type="text" name="" id="" placeholder="请输入密码">
         </div>
       </div>
-      <button class="btn btn-danger">
+      <button class="btn btn-danger" @click="signIn()">
         登录
       </button>
     </div>
@@ -31,7 +31,9 @@ export default {
     card
   },
   methods: {
-    sample() {}
+    signIn() {
+      wx.navigateTo({ url: '/pages/my/main' });
+    }
   },
   created() {}
 };

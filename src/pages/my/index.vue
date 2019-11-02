@@ -7,7 +7,7 @@
       <button class="btn btn-success">
         <i class="iconfont iconweixin"></i>
         微信一键登录</button>
-      <button class="btn btn-primary">已有简书账号登录</button>
+      <button class="btn btn-primary" @click="login()">已有简书账号登录</button>
     </div> -->
     <div class="my-wrap-setting">
       <div class="my-info">
@@ -16,6 +16,7 @@
             src="https://upload.jianshu.io/users/upload_avatars/17593283/1417dbeb-1561-4a6f-b15a-032f74913f35.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/180/h/180/format/webp"
             alt="">
         </div>
+        <div class="clear"></div>
         <div class="name">用户名</div>
       </div>
       <ul class="setting-list">
@@ -57,20 +58,29 @@ export default {
     articleWriteBtn
   },
   methods: {
-    sample() {}
+    login() {
+      wx.navigateTo({ url: '/pages/login/main' });
+    }
   },
   created() {}
 };
 </script>
 
 <style lang="scss" scoped>
+.clear {
+  clear: both;
+  display: inline-block;
+}
 .my-container {
   position: absolute;
   height: 100%;
   width: 100%;
+  background-color: #dfdfdf;
   .my-wrap-empty {
     text-align: center;
     padding: 0px 15px;
+    background-color: white;
+    height: 100%;
     .my-empty {
       height: 240px;
       width: 240px;
@@ -92,23 +102,29 @@ export default {
     }
   }
   .my-wrap-setting {
-    background-color: #dfdfdf;
+    // background-color: #dfdfdf;
     height: 100%;
-    margin-bottom:15px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
     .my-info {
       background-color: white;
       padding: 15px;
       margin: 15px 0;
+      box-sizing: border-box;
       .avator {
-        display: inline-block;
         margin-right: 15px;
+        float: left;
         img {
-          height: 40px;
-          width: 40px;
+          height: 50px;
+          width: 50px;
           border-radius: 50%;
+          font-size: 0;
         }
       }
       .name {
+        height: 50px;
+        line-height: 50px;
+        margin-left: 5px;
         font-size: 16px;
         display: inline-block;
         font-weight: bold;
@@ -149,9 +165,9 @@ export default {
       }
     }
   }
-  .change-login{
-    padding:15px;
-    color:gray;
+  .change-login {
+    padding: 15px;
+    color: gray;
     text-align: center;
   }
 }
