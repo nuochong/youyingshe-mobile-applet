@@ -40,8 +40,9 @@ export default {
 <style lang="scss" scoped>
 .login-container {
   .login-wrap {
-    margin: 15px;
+    // margin: 15px;
     .login-form {
+      margin: 15px;
       input,
       .iconfont {
         display: inline-block;
@@ -59,16 +60,19 @@ export default {
       }
       .login-form-uername {
         border: 1px solid gray;
-        border-radius: 5px;
+        border-radius: 5px 5px 0 0;
         display: flex;
         .iconfont.iconuser {
         }
       }
       .login-form-password {
         border: 1px solid gray;
-        border-radius: 5px;
+        border-radius: 0 0 5px 5px;
         .iconfont.iconmima {
         }
+      }
+      > div:first-child {
+        border-bottom: none;
       }
     }
     .btn.btn-danger {
