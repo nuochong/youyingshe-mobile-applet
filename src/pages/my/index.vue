@@ -7,7 +7,7 @@
       <button class="btn btn-success">
         <i class="iconfont iconweixin"></i>
         微信一键登录</button>
-      <button class="btn btn-primary" @click="login()">已有简书账号登录</button>
+      <button class="btn btn-primary" @click="targetLogin()">已有简书账号登录</button>
     </div> -->
     <div class="my-wrap-setting">
       <div class="my-info">
@@ -20,14 +20,14 @@
         <div class="name">用户名</div>
       </div>
       <ul class="setting-list">
-        <li class="setting-list-li">
+        <li class="setting-list-li" @click="targetHistory()">
           <div class="setting-list-liWrap">
             <i class="iconfont iconhistory setting-list-img"></i>
             <span>最近阅读的记录</span>
             <i class="iconfont iconleft"></i>
           </div>
         </li>
-        <li class="setting-list-li">
+        <li class="setting-list-li" @click="targetLike()">
           <div class="setting-list-liWrap">
             <i class="iconfont iconhome_ico_like- setting-list-img"></i>
             <span>喜欢文章</span>
@@ -58,8 +58,14 @@ export default {
     articleWriteBtn
   },
   methods: {
-    login() {
+    targetLogin() {
       wx.navigateTo({ url: '/pages/login/main' });
+    },
+    targetHistory(){
+      wx.navigateTo({ url: '/pages/history/main' });
+    },
+    targetLike(){
+      wx.navigateTo({ url: '/pages/like/main' });
     }
   },
   created() {}
