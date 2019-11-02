@@ -1,5 +1,6 @@
 <template>
   <div class="my-container">
+
     <!-- <div class="my-wrap-empty">
       <img class="my-empty" src="/static/images/empty.png" />
       <article-write-btn></article-write-btn>
@@ -11,15 +12,24 @@
     <div class="my-wrap-setting">
       <div class="my-info">
         <div class="avator">
-          <img src="https://upload.jianshu.io/users/upload_avatars/17593283/1417dbeb-1561-4a6f-b15a-032f74913f35.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/180/h/180/format/webp" alt="">
+          <img
+            src="https://upload.jianshu.io/users/upload_avatars/17593283/1417dbeb-1561-4a6f-b15a-032f74913f35.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/180/h/180/format/webp"
+            alt="">
         </div>
         <div class="name">用户名</div>
       </div>
       <ul class="setting-list">
         <li class="setting-list-li">
           <div class="setting-list-liWrap">
-            <i class="iconfont iconhistory"></i>
+            <i class="iconfont iconhistory setting-list-img"></i>
             <span>最近阅读的记录</span>
+            <i class="iconfont iconleft"></i>
+          </div>
+        </li>
+        <li class="setting-list-li">
+          <div class="setting-list-liWrap">
+            <i class="iconfont iconhome_ico_like- setting-list-img"></i>
+            <span>喜欢文章</span>
             <i class="iconfont iconleft"></i>
           </div>
         </li>
@@ -30,6 +40,7 @@
         </span>
       </div>
     </div>
+
   </div>
 </template>
 
@@ -54,8 +65,11 @@ export default {
 
 <style lang="scss" scoped>
 .my-container {
-  text-align: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
   .my-wrap-empty {
+    text-align: center;
     padding: 0px 15px;
     .my-empty {
       height: 240px;
@@ -78,7 +92,67 @@ export default {
     }
   }
   .my-wrap-setting {
-
+    background-color: #dfdfdf;
+    height: 100%;
+    margin-bottom:15px;
+    .my-info {
+      background-color: white;
+      padding: 15px;
+      margin: 15px 0;
+      .avator {
+        display: inline-block;
+        margin-right: 15px;
+        img {
+          height: 40px;
+          width: 40px;
+          border-radius: 50%;
+        }
+      }
+      .name {
+        font-size: 16px;
+        display: inline-block;
+        font-weight: bold;
+      }
+    }
+    .setting-list {
+      position: relative;
+      width: 100%;
+      padding-left: 0;
+      list-style-type: none;
+      background-color: white;
+      li {
+        position: relative;
+        width: 100%;
+        word-wrap: break-word;
+        padding: 15px 18px;
+        margin: 0;
+        border-bottom: 1px solid;
+        font-size: 0;
+        border-color: #f0f0f0;
+        box-sizing: border-box;
+        .setting-list-liWrap {
+          display: flex;
+          color: rgb(96, 96, 96);
+          font-size: 14px;
+          .setting-list-img {
+            width: 30px;
+          }
+          span {
+            flex: 1;
+            font-size: 14px;
+          }
+          .iconleft {
+            font-size: 14px;
+            width: 15px;
+          }
+        }
+      }
+    }
+  }
+  .change-login{
+    padding:15px;
+    color:gray;
+    text-align: center;
   }
 }
 </style>
