@@ -39,6 +39,13 @@
       "font_class": "home_ico_like-",
       "unicode": "e622",
       "unicode_decimal": 58914
+    },
+    {
+      "icon_id": "10676752",
+      "name": "微信",
+      "font_class": "weixin",
+      "unicode": "e686",
+      "unicode_decimal": 59014
     }
   ]
 }
