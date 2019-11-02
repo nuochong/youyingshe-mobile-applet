@@ -57,6 +57,9 @@ export default {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+.btn {
+  margin: 15px;
+}
 //处理默认样式
 i {
   display: inline-block;

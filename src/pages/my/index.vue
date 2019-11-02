@@ -41,9 +41,7 @@ export default {
     width: 240px;
     margin-top: 80px;
   }
-  .btn {
-    margin: 15px;
-  }
+
   .btn-primary {
     background-color: #f8f8f8;
     &:hover {

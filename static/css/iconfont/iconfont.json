@@ -34,11 +34,25 @@
       "unicode_decimal": 58887
     },
     {
+      "icon_id": "2706431",
+      "name": "用户名",
+      "font_class": "user",
+      "unicode": "e62c",
+      "unicode_decimal": 58924
+    },
+    {
       "icon_id": "5125936",
       "name": "like",
       "font_class": "home_ico_like-",
       "unicode": "e622",
       "unicode_decimal": 58914
+    },
+    {
+      "icon_id": "10531631",
+      "name": "密码",
+      "font_class": "mima",
+      "unicode": "e644",
+      "unicode_decimal": 58948
     },
     {
       "icon_id": "10676752",
