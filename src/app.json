@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/article/main",
+    "pages/award/main",
     "pages/history/main",
     "pages/my/main",
     "pages/home/main",
