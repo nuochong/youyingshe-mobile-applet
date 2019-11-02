@@ -82,6 +82,7 @@ export default {
   height: 100%;
   width: 100%;
   background-color: #dfdfdf;
+  overflow: hidden;
   .my-wrap-empty {
     text-align: center;
     padding: 0px 15px;
@@ -110,7 +111,6 @@ export default {
   .my-wrap-setting {
     // background-color: #dfdfdf;
     height: 100%;
-    margin-bottom: 15px;
     box-sizing: border-box;
     .my-info {
       background-color: white;
@@ -152,6 +152,9 @@ export default {
         font-size: 0;
         border-color: #f0f0f0;
         box-sizing: border-box;
+        &:hover{
+          background-color: #f1f1f1;
+        }
         .setting-list-liWrap {
           display: flex;
           color: rgb(96, 96, 96);
