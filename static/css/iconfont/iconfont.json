@@ -41,6 +41,20 @@
       "unicode_decimal": 58924
     },
     {
+      "icon_id": "3544644",
+      "name": "htb－Arrow right02",
+      "font_class": "left",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "4133760",
+      "name": "时间 历史记录 计时 钟表 面性",
+      "font_class": "shijianlishijilujishizhongbiaomianxing",
+      "unicode": "e896",
+      "unicode_decimal": 59542
+    },
+    {
       "icon_id": "5125936",
       "name": "like",
       "font_class": "home_ico_like-",
