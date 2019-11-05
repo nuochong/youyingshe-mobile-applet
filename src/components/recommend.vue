@@ -80,6 +80,9 @@ export default {
       display: block;
       overflow: hidden;
       margin-top: 12px;
+      &:last-child {
+        margin-bottom: 12px;
+      }
       .stats-comp {
         font-size: 0;
         .recommend-img {
