@@ -3,7 +3,7 @@
     <div id="reward-panel">
       <div class="user-panel">
         <div class="background">
-          <a href="javascript:;">
+          <a href="javascript:;" @click="targetArticle">
             <button class="close-btn">
               <i class="iconfont ic-close iconhebingxingzhuang"></i>
             </button>
@@ -95,6 +95,9 @@ export default {
     sample() {},
     showInput() {
       this.isShowInput = !this.isShowInput;
+    },
+    targetArticle(){
+      wx.navigateTo({ url: '/pages/article/main' });
     }
   },
   created() {}

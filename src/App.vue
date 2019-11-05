@@ -57,19 +57,26 @@ export default {
   margin: 15px;
 }
 //处理默认样式
-i {
+i,
+a {
   display: inline-block;
+}
+a {
+  &.navigator-hover {
+    background-color: transparent;
+    opacity: none;
+  }
 }
 //重置按钮样式start
 button {
   background-color: #fff;
   border-radius: 0;
   line-height: inherit;
-  -webkit-appearance: none !important;//使元素看起来像什么
+  -webkit-appearance: none !important; //使元素看起来像什么
   display: inline-block;
   &::after {
     border: none;
-  }//使元素看起来像什么
+  } //使元素看起来像什么
 }
 //重置按钮样式end
 
@@ -78,5 +85,4 @@ hr {
   height: 10px !important;
   background-color: #e0e0e0;
 }
-
 </style>
