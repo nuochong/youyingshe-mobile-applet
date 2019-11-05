@@ -1,6 +1,6 @@
 <template>
   <div class="article-card-container">
-    <div href="/u/548acb57ddbb" class="info"><img
+    <div href="javascript:;" class="info"><img
         src="https://upload.jianshu.io/users/upload_avatars/17593283/1417dbeb-1561-4a6f-b15a-032f74913f35.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/180/h/180/format/webp"
         class="user-avatar">
       <div class="user-content">
@@ -14,7 +14,7 @@
 
     <div class="card-article note-flow have-img">
 
-      <section href="/p/b959acd0f338" @click="target()" class="content"><span class="wrap-img inline-3MDdF_0"><img
+      <section href="javascript:;" @click="target()" class="content"><span class="wrap-img inline-3MDdF_0"><img
             src="https://upload-images.jianshu.io/upload_images/10760922-75c501d5d36e9d15.png?imageMogr2/auto-orient/strip|imageView2/1/w/160/h/160/format/webp"></span>
         <div class="summary">
           <h6 class="title">
