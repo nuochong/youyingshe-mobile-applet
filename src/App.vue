@@ -64,10 +64,11 @@ i {
 button {
   background-color: #fff;
   border-radius: 0;
-  line-height:inherit;
+  line-height: inherit;
+  -webkit-appearance: none !important;//使元素看起来像什么
   &::after {
     border: none;
-  }
+  }//使元素看起来像什么
 }
 //重置按钮样式end
 </style>
