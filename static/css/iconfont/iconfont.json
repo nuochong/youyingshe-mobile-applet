@@ -90,6 +90,13 @@
       "unicode_decimal": 58882
     },
     {
+      "icon_id": "3574741",
+      "name": "目录 ",
+      "font_class": "mulu",
+      "unicode": "e786",
+      "unicode_decimal": 59270
+    },
+    {
       "icon_id": "3741244",
       "name": "分享 (1)",
       "font_class": "fenxiang2",
@@ -137,6 +144,13 @@
       "font_class": "ziti1",
       "unicode": "e82e",
       "unicode_decimal": 59438
+    },
+    {
+      "icon_id": "7996401",
+      "name": "search close",
+      "font_class": "hebingxingzhuang",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
     },
     {
       "icon_id": "8312414",
