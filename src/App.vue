@@ -66,6 +66,7 @@ button {
   border-radius: 0;
   line-height: inherit;
   -webkit-appearance: none !important;//使元素看起来像什么
+  display: inline-block;
   &::after {
     border: none;
   }//使元素看起来像什么

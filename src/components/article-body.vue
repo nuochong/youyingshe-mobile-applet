@@ -17,7 +17,7 @@
           </a>
 
           <div class="article-meta">
-            <i class="iconfont iconjewel" />
+            <i class="iconfont iconjewel icondiamond" />
             <span>5.409</span>
             <span>2018-08-05 10:42</span>
           </div>
@@ -25,7 +25,7 @@
           <div class="meta">
             <span>2018-02-02 07:24</span>
             <button class="app-open">
-              <i class="iconfont ic-openinapp"></i>
+              <i class="iconfont ic-openinapp iconcontextphone"></i>
               <span>打开应用</span>
             </button>
             <div class="reader-mode-public reader-mode-iFw96_0">
@@ -736,6 +736,7 @@ button {
   .app-open {
     margin: 0;
     color: #b1b1b1 !important;
+    display: inline-block;
     i {
       font-size: 14px;
       vertical-align: middle;
