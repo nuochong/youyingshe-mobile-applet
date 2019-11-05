@@ -48,9 +48,7 @@ export default {
   -moz-transition: width 2s;
   -webkit-transition: width 2s;
   -o-transition: width 2s;
-}
 
-* {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -62,4 +60,13 @@ export default {
 i {
   display: inline-block;
 }
+//重置按钮样式start
+button {
+  background-color: #fff;
+  border-radius: 0;
+  &::after {
+    border: none;
+  }
+}
+//重置按钮样式end
 </style>
