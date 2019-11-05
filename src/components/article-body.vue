@@ -40,7 +40,7 @@
             <button class="close-collapse-btn">
               <i class="iconfont iconmore" />
             </button>
-            <button class="open-app-btn">打开App，阅读文章</button>
+            <button class="open-app-btn">打开应用，阅读文章</button>
           </div>
 
           <div class="article-praise-container">
