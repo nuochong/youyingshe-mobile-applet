@@ -5,6 +5,8 @@
     <hr/>
     <comment></comment>
     <hr/>
+    <serial></serial>
+    <hr/>
     <recommend></recommend>
     <article-footer></article-footer>
   </div>
@@ -16,6 +18,7 @@ import comment from '@/components/comment';
 import recommend from '@/components/recommend';
 import articleFooter from '@/components/article-footer';
 import articleDirectory from '@/components/article-directory';
+import serial from '@/components/serial';
 
 export default {
   data() {
@@ -28,7 +31,8 @@ export default {
     comment,
     recommend,
     articleFooter,
-    articleDirectory
+    articleDirectory,
+    serial
   },
   methods: {
     sample() {}

@@ -245,6 +245,9 @@
         </a>
       </div>
     </div>
+
+    <!-- 顶部占位 -->
+    <div class="article-directory-placeholder"></div>
   </div>
 </template>
 
@@ -271,6 +274,10 @@ export default {
 
 <style lang="scss" scoped>
 /* ArticleDirectory */
+.article-directory-placeholder{
+  display: block;
+  height: 46px;
+}
 .book-nav {
   padding-left: 18px;
   padding-right: 18px;

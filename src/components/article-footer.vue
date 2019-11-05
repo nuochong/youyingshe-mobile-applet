@@ -1,5 +1,8 @@
 <template>
+<div class="article-footer-panel">
+  <div class="article-footer-placeholder">
 
+  </div>
   <section class="article-footer-container">
     <div class="article-footer-wrap">
       <!-- 底部菜单 -->
@@ -13,7 +16,7 @@
       </div>
     </div>
   </section>
-
+</div>
 </template>
 
 <script>
@@ -35,6 +38,10 @@ export default {
 
 <style lang="scss" scoped>
 /* ArticleFooter */
+.article-footer-placeholder{
+  display: block;
+  height: 60px;
+}
 .article-footer-container {
   position: fixed;
   bottom: 0;
