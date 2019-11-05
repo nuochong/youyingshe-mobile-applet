@@ -64,6 +64,7 @@ i {
 button {
   background-color: #fff;
   border-radius: 0;
+  line-height:inherit;
   &::after {
     border: none;
   }
