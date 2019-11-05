@@ -41,6 +41,20 @@
       "unicode_decimal": 58881
     },
     {
+      "icon_id": "927008",
+      "name": "new",
+      "font_class": "new",
+      "unicode": "e648",
+      "unicode_decimal": 58952
+    },
+    {
+      "icon_id": "1058631",
+      "name": "tag",
+      "font_class": "tag",
+      "unicode": "e73c",
+      "unicode_decimal": 59196
+    },
+    {
       "icon_id": "1553951",
       "name": "top",
       "font_class": "shang",
