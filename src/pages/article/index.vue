@@ -1,5 +1,6 @@
 <template>
   <div>
+    <article-directory></article-directory>
     <article-body></article-body>
     <hr/>
     <comment></comment>
@@ -14,6 +15,7 @@ import articleBody from '@/components/article-body';
 import comment from '@/components/comment';
 import recommend from '@/components/recommend';
 import articleFooter from '@/components/article-footer';
+import articleDirectory from '@/components/article-directory';
 
 export default {
   data() {
@@ -25,7 +27,8 @@ export default {
     articleBody,
     comment,
     recommend,
-    articleFooter
+    articleFooter,
+    articleDirectory
   },
   methods: {
     sample() {}

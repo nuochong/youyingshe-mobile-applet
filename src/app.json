@@ -1,8 +1,7 @@
 {
   "pages": [
-    "pages/admire/main",
-    "pages/admire-pay/main",
     "pages/article/main",
+    "pages/admire/main",
     "pages/my/main",
     "pages/award/main",
     "pages/history/main",
