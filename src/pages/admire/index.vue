@@ -3,11 +3,9 @@
     <div id="reward-panel">
       <div class="user-panel">
         <div class="background">
-          <a href="javascript:;" @click="targetArticle">
-            <button class="close-btn">
-              <i class="iconfont ic-close iconhebingxingzhuang"></i>
-            </button>
-          </a>
+          <button class="close-btn" @click="targetArticle">
+            <i class="iconfont ic-close iconhebingxingzhuang"></i>
+          </button>
         </div>
         <div class="author">
           <div class="avatar">
@@ -22,12 +20,10 @@
       <!-- <div class="pay" className={["pay ",!this.state.isShowInput ? 'hide' :'' ].join('')}> -->
       <div class="pay" :class="{'hide':!isShowInput}">
         <div class="btn-group">
-          <a>
             <button class="btn btn-left">
               2<span> 颗</span>
               <div class="amount">¥2.00</div>
             </button>
-          </a>
           <button class="btn btn-middle">
             5<span> 颗</span>
             <div class="amount">¥5.00</div>
@@ -96,7 +92,7 @@ export default {
     showInput() {
       this.isShowInput = !this.isShowInput;
     },
-    targetArticle(){
+    targetArticle() {
       wx.navigateTo({ url: '/pages/article/main' });
     }
   },

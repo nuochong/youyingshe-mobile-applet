@@ -57,8 +57,7 @@ export default {
   margin: 15px;
 }
 //处理默认样式
-i,
-a {
+i {
   display: inline-block;
 }
 a {
