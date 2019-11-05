@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/directory/main",
     "pages/article/main",
     "pages/admire/main",
     "pages/my/main",
