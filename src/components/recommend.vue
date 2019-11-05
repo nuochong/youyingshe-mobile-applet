@@ -1,39 +1,39 @@
 <template>
   <div>
-           <section class="article-recommend">
-          <p class="top-title">
-            推荐阅读
-            <a href="javascript:;" class="more">
-              更多精彩内容
-              <i class="iconfont ic-link" />
-            </a>
-          </p>
-          <div class="recommend-note">
-            <div class="recommend-wrap">
-              <span class="stats-comp">
-                <div class="recommend-img" style="background-image: url('/static/images/18354189-e9e9a30bcfda6c4b.jpg')">
-                  &nbsp;
-                </div>
-                <div class="author">
-                  <div class="title">绘画艺术丨今日教程：彩铅画—兰花</div>
-                  <div class="avatar">
-                    <img src="https://upload-images.jianshu.io/upload_images/16572117-4710f26e4a214620.jpeg" />
-                  </div>
-                  <div class="author-name">教画画的小然</div>
-                  <div class="meta">
-                    App中阅读
-                    <i class="iconfont ic-list-read" />
-                    <span>457</span>
-                    <i class="iconfont ic-list-comments" />
-                    <span>0</span>
-                    <i class="iconfont ic-list-like" />
-                    <span>15</span>
-                  </div>
-                </div>
-              </span>
+    <section class="article-recommend">
+      <p class="top-title">
+        推荐阅读
+        <a href="javascript:;" class="more">
+          更多精彩内容
+          <i class="iconfont ic-link" />
+        </a>
+      </p>
+      <div class="recommend-note">
+        <div class="recommend-wrap">
+          <span class="stats-comp">
+            <div class="recommend-img" style="background-image: url('/static/images/18354189-e9e9a30bcfda6c4b.jpg')">
+              &nbsp;
             </div>
-          </div>
-        </section>
+            <div class="author">
+              <div class="title">绘画艺术丨今日教程：彩铅画—兰花</div>
+              <div class="avatar">
+                <img src="https://upload-images.jianshu.io/upload_images/16572117-4710f26e4a214620.jpeg" />
+              </div>
+              <div class="author-name">教画画的小然</div>
+              <div class="meta">
+                App中阅读
+                <i class="iconfont ic-list-read" />
+                <span>457</span>
+                <i class="iconfont ic-list-comments" />
+                <span>0</span>
+                <i class="iconfont ic-list-like" />
+                <span>15</span>
+              </div>
+            </div>
+          </span>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -46,16 +46,11 @@ export default {
       title: 'components'
     };
   },
-  components: {
-  },
+  components: {},
   methods: {
-    sample() {
-
-    }
+    sample() {}
   },
-  created() {
-
-  }
+  created() {}
 };
 </script>
 

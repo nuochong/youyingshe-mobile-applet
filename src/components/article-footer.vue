@@ -1,22 +1,22 @@
 <template>
-<div class="article-footer-panel">
-  <div class="article-footer-placeholder">
+  <div class="article-footer-panel">
+    <div class="article-footer-placeholder">
 
-  </div>
-  <section class="article-footer-container">
-    <div class="article-footer-wrap">
-      <!-- 底部菜单 -->
-      <div class="article-footer-btn article-footer-home">
-        <i class="iconfont iconzhuye"></i>
-        简书首页
-      </div>
-      <div class="article-footer-btn article-footer-share">
-        <i class="iconfont iconfenxiang"></i>
-        分享文章
-      </div>
     </div>
-  </section>
-</div>
+    <section class="article-footer-container">
+      <div class="article-footer-wrap">
+        <!-- 底部菜单 -->
+        <div class="article-footer-btn article-footer-home">
+          <i class="iconfont iconzhuye"></i>
+          简书首页
+        </div>
+        <div class="article-footer-btn article-footer-share">
+          <i class="iconfont iconfenxiang"></i>
+          分享文章
+        </div>
+      </div>
+    </section>
+  </div>
 </template>
 
 <script>
@@ -38,7 +38,7 @@ export default {
 
 <style lang="scss" scoped>
 /* ArticleFooter */
-.article-footer-placeholder{
+.article-footer-placeholder {
   display: block;
   height: 60px;
 }

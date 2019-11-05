@@ -274,7 +274,7 @@ export default {
 
 <style lang="scss" scoped>
 /* ArticleDirectory */
-.article-directory-placeholder{
+.article-directory-placeholder {
   display: block;
   height: 46px;
 }

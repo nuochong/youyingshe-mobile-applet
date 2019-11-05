@@ -14,8 +14,7 @@
 
     <div class="card-article note-flow have-img">
 
-      <section href="/p/b959acd0f338" @click="target()" class="content"><span
-          class="wrap-img inline-3MDdF_0"><img
+      <section href="/p/b959acd0f338" @click="target()" class="content"><span class="wrap-img inline-3MDdF_0"><img
             src="https://upload-images.jianshu.io/upload_images/10760922-75c501d5d36e9d15.png?imageMogr2/auto-orient/strip|imageView2/1/w/160/h/160/format/webp"></span>
         <div class="summary">
           <h6 class="title">
@@ -27,9 +26,7 @@
         </div>
       </section>
       <div class="meta oneline">
-        <i
-          class="iconfont ic-icon_jewel icondiamond"></i><span>0.515</span><span
-          class="name">TroyShen</span><span><i
+        <i class="iconfont ic-icon_jewel icondiamond"></i><span>0.515</span><span class="name">TroyShen</span><span><i
             class="iconfont ic-list-comments iconliuyan"></i>
           1
         </span><span><i class="iconfont ic-list-like iconhome_ico_like-"></i>
@@ -110,7 +107,7 @@ export default {
       -webkit-align-items: center;
       -ms-flex-align: center;
       align-items: center;
-      font-size:16px;
+      font-size: 16px;
       .nickname {
         overflow: hidden;
         margin-right: 5px;

@@ -1,14 +1,14 @@
 <template>
   <div>
-            <section class="article-comment">
-          <div class="top-title">
-            暂无评论
-            <button class="write-comment">
-              <i class="iconfont iconwrite" />
-              写评论
-            </button>
-          </div>
-          <!-- <div class="no-content">
+    <section class="article-comment">
+      <div class="top-title">
+        暂无评论
+        <button class="write-comment">
+          <i class="iconfont iconwrite" />
+          写评论
+        </button>
+      </div>
+      <!-- <div class="no-content">
             <img src="//cdn2.jianshu.io/asimov/src/assets/image/note/icon_comment_no.1b12627d.png" />
             <div>
               智慧如你，不想
@@ -16,7 +16,7 @@
               咩~
             </div>
           </div> -->
-          <!-- <div class="comment-wrapper">
+      <!-- <div class="comment-wrapper">
             <textarea id="comment" placeholder="写下你的评论..." />
             <div id="backdrop-g1y" class="backdrop show" />
             <div class="drawer comment-reply-drawer">
@@ -27,96 +27,103 @@
             </div>
           </div> -->
 
-          <div class="comments-wrap">
-            <div class="comment-item">
-              <a href="javascript:;" class="user-avatar">
-                <span class="">
-                  <img src="https://upload.jianshu.io/users/upload_avatars/7884341/3f5f45a8-116a-48dd-b3c1-88829e29a470.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/70/h/70/format/webp" />
-                </span>
-              </a>
-              <div class="main">
-                <div class="comment-user">
-                  <div class="nickname-wrap">
-                    <a href="javascript:;" class="nickname oneline">
-                      青藤阁任春芳
-                    </a>
-                    <img src="https://upload.jianshu.io/users/upload_avatars/7884341/3f5f45a8-116a-48dd-b3c1-88829e29a470.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/70/h/70/format/webp" width="20" height="20" />
-                  </div>
-                </div>
-                <div class="comment-content">👍👍👍🌹🌹</div>
-                <div class="comment-extra">
-                  <span class="floor">6楼</span>
-                  08.12 09:57
-                  <div class="social-wrap">
-                    <button class="reply-btn">
-                      <i class="iconfont ic-pinglunhuifu" />
-                    </button>
-                    <button>
-                      <i class="iconfont ic-icon_comment_like" />
-                    </button>
-                  </div>
-                </div>
+      <div class="comments-wrap">
+        <div class="comment-item">
+          <a href="javascript:;" class="user-avatar">
+            <span class="">
+              <img
+                src="https://upload.jianshu.io/users/upload_avatars/7884341/3f5f45a8-116a-48dd-b3c1-88829e29a470.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/70/h/70/format/webp" />
+            </span>
+          </a>
+          <div class="main">
+            <div class="comment-user">
+              <div class="nickname-wrap">
+                <a href="javascript:;" class="nickname oneline">
+                  青藤阁任春芳
+                </a>
+                <img
+                  src="https://upload.jianshu.io/users/upload_avatars/7884341/3f5f45a8-116a-48dd-b3c1-88829e29a470.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/70/h/70/format/webp"
+                  width="20" height="20" />
               </div>
             </div>
-            <div class="comment-item ">
-              <a href="javascript:;" class="user-avatar">
-                <span class="">
-                  <img src="https://upload.jianshu.io/users/upload_avatars/7884341/3f5f45a8-116a-48dd-b3c1-88829e29a470.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/70/h/70/format/webp" />
-                </span>
-              </a>
-              <div class="main">
-                <div class="comment-user">
-                  <div class="nickname-wrap">
-                    <a href="javascript:;" class="nickname oneline">
-                      青青竹青
-                    </a>
-                    <img src="https://upload.jianshu.io/users/upload_avatars/7884341/3f5f45a8-116a-48dd-b3c1-88829e29a470.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/70/h/70/format/webp" width="20" height="20" />
-                  </div>
-                </div>
-                <div class="comment-content">你的画，我都看过来了，我觉得这幅最好！</div>
-                <div class="comment-extra">
-                  <span class="floor">5楼</span>
-                  08.06 18:23
-                  <div class="social-wrap">
-                    <button class="reply-btn">
-                      <i class="iconfont ic-pinglunhuifu" />
-                    </button>
-                    <button>
-                      <i class="iconfont ic-icon_comment_like" />
-                    </button>
-                  </div>
-                </div>
-                <div class="sub-comment-list">
-                  <div class="sub-comment-item">
-                    <a href="javascript:;" class="user-avatar">
-                      <span class="">
-                        <img src="https://upload.jianshu.io/users/upload_avatars/7884341/3f5f45a8-116a-48dd-b3c1-88829e29a470.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/70/h/70/format/webp" />
-                      </span>
-                    </a>
-                    <div class="sub-comment-wrap">
-                      <a href="javascript:;" class="nickname oneline">
-                        清欢余余
-                      </a>
-                      <div class="sub-comment-text">
-                        <a href="javascript:;" class="maleskine-author" target="_blank">
-                          @青青竹青
-                        </a>{' '}
-                        哈哈，谢谢夸奖，说明我在进步嘛，努力还是有收获哒。。😀
-                      </div>
-                      <div class="sub-comment-extra">
-                        08.07 07:46
-                        <button class="reply-btn">回复</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            <div class="comment-content">👍👍👍🌹🌹</div>
+            <div class="comment-extra">
+              <span class="floor">6楼</span>
+              08.12 09:57
+              <div class="social-wrap">
+                <button class="reply-btn">
+                  <i class="iconfont ic-pinglunhuifu" />
+                </button>
+                <button>
+                  <i class="iconfont ic-icon_comment_like" />
+                </button>
               </div>
-            </div>
-            <div class="comment-open-app-btn-wrap">
-              <button class="comment-open-app-btn">打开应用，查看全部评论</button>
             </div>
           </div>
-        </section>
+        </div>
+        <div class="comment-item ">
+          <a href="javascript:;" class="user-avatar">
+            <span class="">
+              <img
+                src="https://upload.jianshu.io/users/upload_avatars/7884341/3f5f45a8-116a-48dd-b3c1-88829e29a470.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/70/h/70/format/webp" />
+            </span>
+          </a>
+          <div class="main">
+            <div class="comment-user">
+              <div class="nickname-wrap">
+                <a href="javascript:;" class="nickname oneline">
+                  青青竹青
+                </a>
+                <img
+                  src="https://upload.jianshu.io/users/upload_avatars/7884341/3f5f45a8-116a-48dd-b3c1-88829e29a470.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/70/h/70/format/webp"
+                  width="20" height="20" />
+              </div>
+            </div>
+            <div class="comment-content">你的画，我都看过来了，我觉得这幅最好！</div>
+            <div class="comment-extra">
+              <span class="floor">5楼</span>
+              08.06 18:23
+              <div class="social-wrap">
+                <button class="reply-btn">
+                  <i class="iconfont ic-pinglunhuifu" />
+                </button>
+                <button>
+                  <i class="iconfont ic-icon_comment_like" />
+                </button>
+              </div>
+            </div>
+            <div class="sub-comment-list">
+              <div class="sub-comment-item">
+                <a href="javascript:;" class="user-avatar">
+                  <span class="">
+                    <img
+                      src="https://upload.jianshu.io/users/upload_avatars/7884341/3f5f45a8-116a-48dd-b3c1-88829e29a470.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/70/h/70/format/webp" />
+                  </span>
+                </a>
+                <div class="sub-comment-wrap">
+                  <a href="javascript:;" class="nickname oneline">
+                    清欢余余
+                  </a>
+                  <div class="sub-comment-text">
+                    <a href="javascript:;" class="maleskine-author" target="_blank">
+                      @青青竹青
+                    </a>{' '}
+                    哈哈，谢谢夸奖，说明我在进步嘛，努力还是有收获哒。。😀
+                  </div>
+                  <div class="sub-comment-extra">
+                    08.07 07:46
+                    <button class="reply-btn">回复</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="comment-open-app-btn-wrap">
+          <button class="comment-open-app-btn">打开应用，查看全部评论</button>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -129,16 +136,11 @@ export default {
       title: 'components'
     };
   },
-  components: {
-  },
+  components: {},
   methods: {
-    sample() {
-
-    }
+    sample() {}
   },
-  created() {
-
-  }
+  created() {}
 };
 </script>
 
@@ -379,5 +381,4 @@ export default {
     }
   }
 }
-
 </style>
