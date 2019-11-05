@@ -1,11 +1,15 @@
 <template>
   <div>
-    <card :text="title"></card>
+    <article-body></article-body>
+    <comment></comment>
+    <recommend></recommend>
   </div>
 </template>
 
 <script>
-import card from '@/components/card';
+import articleBody from '@/components/article-body';
+import comment from '@/components/comment';
+import recommend from '@/components/recommend';
 
 export default {
   data() {
@@ -14,19 +18,16 @@ export default {
     };
   },
   components: {
-    card
+    articleBody,
+    comment,
+    recommend
   },
   methods: {
-    sample() {
-
-    }
+    sample() {}
   },
-  created() {
-
-  }
+  created() {}
 };
 </script>
 
 <style lang="scss" scoped>
-
 </style>

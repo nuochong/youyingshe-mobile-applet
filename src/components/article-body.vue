@@ -1,0 +1,403 @@
+<template>
+  <div>
+    <section class="article-body-container">
+          <div class="article-body collapse-free-content">
+            <h1 class="article-title">吐血整理写给新手的水彩颜料选购指南（干货）</h1>
+            <div class="article-message">
+              <a href="javascript:;" class="info">
+                <img src="https://upload.jianshu.io/users/upload_avatars/5388989/e1e34e3f-2b1e-425d-845d-850556dc4820?imageMogr2/auto-orient/strip|imageView2/1/w/180/h/180/format/webp" class="user-avatar" />
+                <div class="user-content">
+                  <div class="user-content-wrap">
+                    <div class="user-nickname">琢磨自留地</div>
+                    <span class="label badge-item">简书作者</span>
+                  </div>
+                </div>
+              </a>
+              <div class="article-meta">
+                <i class="iconfont iconjewel" />
+                <span>5.409</span>
+                <span>2018-08-05 10:42</span>
+              </div>
+            </div>
+            <div class="article-content">
+              <div class="image-package">
+                <div class="image-container">
+                  <div class="image-container-fill" />
+                  <div class="image-view">
+                    <img
+                      class=""
+                      src="https://upload-images.jianshu.io/upload_images/2806955-568cddc71ddf2889.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/700/format/webp"
+                    />
+                  </div>
+                </div>
+                <div class="image-caption">第一组花瓣，完全在试色当中</div>
+              </div>
+            </div>
+            <div class="article-copyright">© 著作权归作者所有,转载或内容合作请联系作者</div>
+          </div>
+
+          <div class="collapse-tips">
+            <button class="close-collapse-btn">
+              <i class="iconfont iconmore" />
+            </button>
+            <button class="open-app-btn">打开App，阅读文章</button>
+          </div>
+
+          <div class="article-praise-container">
+            <div class="article-line-hint">
+              <div class="line" />
+              <p class="content">
+                <span>点赞赚钻</span>
+                <span class="special">最高日赚数百元</span>
+              </p>
+            </div>
+            <div class="article-praise">
+              <i class="iconfont iconlike" />
+              <span class="graceful-words">
+                赞 <span class="numbers">(0)</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="article-reward">
+            <div class="reward-description">
+              <a href="javascript:;" class="author-avatar">
+                <img src="https://upload.jianshu.io/users/upload_avatars/5388989/e1e34e3f-2b1e-425d-845d-850556dc4820?imageMogr2/auto-orient/strip|imageView2/1/w/180/h/180/format/webp" />
+              </a>
+              <div class="author-info">
+                <div class="author-nickname">琢磨自留地</div>
+                <div class="author-desc">小礼物走一走，来简书关注我</div>
+              </div>
+              <button class="new-reward-button">赞赏</button>
+            </div>
+          </div>
+        </section>
+  </div>
+</template>
+
+<script>
+// import card from '@/components/card';
+
+export default {
+  data() {
+    return {
+      title: 'components'
+    };
+  },
+  components: {
+  },
+  methods: {
+    sample() {
+
+    }
+  },
+  created() {
+
+  }
+};
+</script>
+
+<style lang="scss" scoped>
+/*----------*/
+.article-body-container {
+  padding-left: 18px;
+  padding-right: 18px;
+  .collapse-free-content {
+    position: relative;
+    height: 1000px;
+    overflow: hidden;
+    padding-left: 18px;
+    padding-right: 18px;
+    margin-left: -18px;
+    margin-right: -18px;
+}
+  .article-body {
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      width: 100%;
+      height: 100px;
+      background-image: -webkit-gradient(linear,left bottom,left top,from(#fff),to(hsla(0,0%,100%,0)));
+      background-image: -webkit-linear-gradient(bottom,#fff,hsla(0,0%,100%,0));
+      background-image: -o-linear-gradient(bottom,#fff,hsla(0,0%,100%,0));
+      background-image: linear-gradient(0deg,#fff,hsla(0,0%,100%,0));
+      z-index: 1;
+  }
+    .article-title {
+      margin: 15px 0;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 1.4;
+      color: #2f2f2f;
+    }
+    .article-message {
+      margin-bottom: 20px;
+      font-size: 13px;
+      color: #b1b1b1;
+      .info {
+        display: flex;
+        .user-avatar {
+          width: 34px;
+          height: 34px;
+          border-radius: 17px;
+          float: left;
+          margin-right: 5px;
+        }
+        .user-content {
+          display: flex;
+          align-items: center;
+          .user-content-wrap {
+            display: flex;
+            vertical-align: middle;
+            .user-nickname {
+              margin-right: 5px;
+              font-size: 16px;
+              font-weight: 700;
+              line-height: 16px;
+              color: #484848;
+              display: inline-block;
+            }
+            .badge-item {
+              padding: 1px 2px;
+              font-size: 12px;
+              color: #ea6f5a;
+              border-radius: 3px;
+              vertical-align: middle;
+              position: relative;
+              display: inline-block;
+              &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                border: 1px solid #ea6f5a;
+                width: 200%;
+                height: 200%;
+                transform: scale(0.5);
+                transform-origin: left top;
+                border-radius: 3px;
+              }
+            }
+          }
+        }
+      }
+      .article-meta {
+        margin-top: 10px;
+        i,
+        span {
+          margin-right: 10px;
+          font-size: 13px;
+          line-height: 13px;
+        }
+      }
+    }
+    .article-content {
+      .image-package {
+        margin: 0 0 25px;
+        text-align: center;
+        .image-container {
+          z-index: 1;
+          position: relative;
+          -webkit-transition: background-color 0.1s linear;
+          -o-transition: background-color 0.1s linear;
+          transition: background-color 0.1s linear;
+          margin: 0 auto;
+          background-color: #eee;
+
+          max-width: 700px;
+          max-height: 504px;
+          background-color: transparent;
+          .image-container-fill {
+            z-index: 50;
+          }
+          .image-view {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            img {
+              -webkit-transition: all 0.15s linear;
+              -o-transition: all 0.15s linear;
+              transition: all 0.15s linear;
+              z-index: 1;
+              opacity: 1;
+
+              max-width: 100%;
+              height: auto;
+              vertical-align: middle;
+              border: 0;
+              -webkit-transition: all 0.25s ease-in-out;
+              -o-transition: all 0.25s ease-in-out;
+              transition: all 0.25s ease-in-out;
+            }
+          }
+        }
+        .image-caption {
+          min-width: 20%;
+          max-width: 80%;
+          min-height: 22px;
+          display: inline-block;
+          padding: 10px 10px 6px;
+          margin: 0 auto;
+          border-bottom: 1px solid;
+          color: #969696;
+          font-size: 14px;
+          line-height: 1.7;
+          border-color: #d9d9d9;
+        }
+      }
+    }
+    .article-copyright {
+      font-size: 13px;
+      color: hsla(0, 0%, 59%, 0.4);
+      position: relative;
+      line-height: 40px;
+    }
+  }
+  .collapse-tips {
+    text-align: center;
+    .close-collapse-btn {
+      color: #ea6f5a;
+      width: 100%;
+      display: block;
+      padding-top: 20px;
+      padding-bottom: 10px;
+      margin-top: 5px;
+      i{
+        font-size:30px;
+      }
+
+  }
+  .open-app-btn {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    background-color: #ea6f5a;
+    color: #fff;
+    text-align: center;
+    width: 240px;
+    height: 45px;
+    padding: 10px 30px;
+    font-size: 16px;
+    border-radius: 23px;
+}
+}
+  .article-praise-container {
+    margin: 15px 0 26px;
+    text-align: center;
+    .article-line-hint {
+      position: relative;
+      height: 31px;
+      text-align: center;
+      user-select: none;
+      .line {
+        position: absolute;
+        width: 100%;
+        top: 15px;
+        height: 1px;
+        background-color: #ddd;
+        z-index: 0;
+      }
+      .content {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.7;
+        color: #2f2f2f;
+
+        display: inline-block;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+        font-size: 14px;
+        line-height: 31px;
+        padding: 0 10px;
+        background-color: #fff;
+        span {
+          display: inline-block;
+          vertical-align: middle;
+          font-size: 16px;
+          margin-right: 5px;
+          font-weight: 500;
+          line-height: 22px;
+          color: #666;
+        }
+        .special {
+          color: #ea6f5a;
+        }
+      }
+    }
+    .article-praise {
+      i {
+        color: #888;
+        font-size: 60px;
+        display: block;
+      }
+      .graceful-words {
+        font-size: 13px;
+        color: #888;
+        .numbers {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+  .article-reward {
+    height: 66px;
+    display: flex;
+    background-color: #ececec;
+    margin-bottom: 20px;
+    .reward-description {
+      width: 100%;
+      padding: 15px;
+      display: flex;
+      .author-avatar {
+        width: 36px;
+        height: 36px;
+        margin-right: 6px;
+        display: inline-block;
+        img {
+          height: 100%;
+          width: 100%;
+          border-radius: 50%;
+        }
+      }
+      .author-info {
+        flex: 1;
+        .author-nickname {
+          font-size: 15px;
+          line-height: 21px;
+          overflow: hidden;
+          -o-text-overflow: ellipsis;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          font-weight: 700;
+          color: #484848;
+        }
+        .author-desc {
+          padding-top: 2px;
+          font-size: 12px;
+          line-height: 17px;
+          overflow: hidden;
+          -o-text-overflow: ellipsis;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          color: #999;
+        }
+      }
+      .new-reward-button {
+        height: 36px;
+        width: 78px;
+        background-color: #ea6f5a;
+        color: #fff;
+        border-radius: 20px;
+        border: none;
+        line-height: 36px;
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
+</style>
