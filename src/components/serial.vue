@@ -2,11 +2,11 @@
   <!-- 连载作品 -->
   <div class="note-novel-info">
     <div class="top-title">连载作品</div>
-    <a href="javascript:;">
+    <a href="javascript:;" @click="targetArticleDirectory">
       <img src="https://upload.jianshu.io/book/image/741d215c-5eb3-4202-a7c0-2448c74aa494?imageMogr2/auto-orient/strip|imageView2/1/w/180/h/240/format/webp"
         alt="" class="cover" />
     </a>
-    <a href="javascript:;" class="name">
+    <a href="javascript:;" class="name" @click="targetArticleDirectory">
       青春玄幻|我的左眼 第一季
     </a>
     <button class="follow-btn notebook-follow-button follow">
@@ -34,7 +34,9 @@ export default {
   },
   components: {},
   methods: {
-    sample() {}
+    targetArticleDirectory() {
+      wx.navigateTo({ url: '/pages/directory/main' });
+    }
   },
   created() {}
 };
