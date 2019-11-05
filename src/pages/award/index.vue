@@ -17,16 +17,11 @@ export default {
     card
   },
   methods: {
-    sample() {
-
-    }
+    sample() {}
   },
-  created() {
-
-  }
+  created() {}
 };
 </script>
 
 <style lang="scss" scoped>
-
 </style>

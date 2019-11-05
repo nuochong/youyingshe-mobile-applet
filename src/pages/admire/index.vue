@@ -20,10 +20,10 @@
       <!-- <div class="pay" className={["pay ",!this.state.isShowInput ? 'hide' :'' ].join('')}> -->
       <div class="pay" :class="{'hide':!isShowInput}">
         <div class="btn-group">
-            <button class="btn btn-left">
-              2<span> 颗</span>
-              <div class="amount">¥2.00</div>
-            </button>
+          <button class="btn btn-left">
+            2<span> 颗</span>
+            <div class="amount">¥2.00</div>
+          </button>
           <button class="btn btn-middle">
             5<span> 颗</span>
             <div class="amount">¥5.00</div>

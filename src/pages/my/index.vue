@@ -61,10 +61,10 @@ export default {
     targetLogin() {
       wx.navigateTo({ url: '/pages/login/main' });
     },
-    targetHistory(){
+    targetHistory() {
       wx.navigateTo({ url: '/pages/history/main' });
     },
-    targetLike(){
+    targetLike() {
       wx.navigateTo({ url: '/pages/like/main' });
     }
   },
@@ -152,7 +152,7 @@ export default {
         font-size: 0;
         border-color: #f0f0f0;
         box-sizing: border-box;
-        &:hover{
+        &:hover {
           background-color: #f1f1f1;
         }
         .setting-list-liWrap {

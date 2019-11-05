@@ -2,11 +2,11 @@
   <div>
     <article-directory></article-directory>
     <article-body></article-body>
-    <hr/>
+    <hr />
     <comment></comment>
-    <hr/>
+    <hr />
     <serial></serial>
-    <hr/>
+    <hr />
     <recommend></recommend>
     <article-footer></article-footer>
   </div>

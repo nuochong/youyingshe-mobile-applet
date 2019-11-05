@@ -26,7 +26,7 @@ export default {
       this.toastNone('测试信息');
     },
     targetLike() {
-       wx.navigateTo({url: '/pages/like/main'})
+      wx.navigateTo({ url: '/pages/like/main' });
     }
   },
   created() {
@@ -36,7 +36,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.flow-container{
+.flow-container {
   overflow: auto;
 }
 </style>

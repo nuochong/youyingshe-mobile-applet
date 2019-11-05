@@ -51,7 +51,7 @@ export default {
     position: relative;
     width: 100%;
     padding: 0;
-    margin:0;
+    margin: 0;
     list-style-type: none;
     .history-li {
       position: relative;
