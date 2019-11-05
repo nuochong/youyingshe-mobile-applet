@@ -768,6 +768,7 @@ button {
     margin: 0;
     color: #b1b1b1 !important;
     display: inline-block;
+    padding-left: 0;
     i {
       font-size: 14px;
       vertical-align: middle;
