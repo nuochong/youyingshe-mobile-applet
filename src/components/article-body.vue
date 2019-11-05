@@ -68,6 +68,7 @@
         <p class="content">还有 79% 的精彩内容</p>
       </div>
 
+      <!-- 上/下一章 -->
       <div class="book-chapter">
         <a href="javascript:;" class="chapter-item prev-chapter half chapter-with-next">
           <div class="text">
@@ -79,6 +80,27 @@
           </div>
         </a>
         <a href="javascript:;" class="chapter-item next-chapter half">
+          <div class="text">
+            <p>
+              下一章
+              <i class="iconfont ic-link"></i>
+            </p>
+            <span>青春玄幻|我的左眼2</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="book-chapter">
+        <a href="javascript:;" class="chapter-item prev-chapter none chapter-with-next">
+          <div class="text">
+            <p>
+              <i class="iconfont ic-back"></i>
+              上一章
+            </p>
+            <span>青春玄幻|我的左眼61</span>
+          </div>
+        </a>
+        <a href="javascript:;" class="chapter-item next-chapter all">
           <div class="text">
             <p>
               下一章
@@ -601,8 +623,17 @@ export default {
   position: relative;
   background-color: #f5f5f5;
   border-color: #e5e5e5;
+  //有上一章和下一章
   .half {
     width: 50%;
+  }
+  //只有上一章或下一章
+  .all {
+    width: 100%;
+  }
+  //没有
+  .none {
+    display: none !important;
   }
   .chapter-item {
     display: inline-block;
