@@ -71,4 +71,11 @@ button {
   }//使元素看起来像什么
 }
 //重置按钮样式end
+
+hr {
+  border-width: 0;
+  height: 10px !important;
+  background-color: #e0e0e0;
+}
+
 </style>

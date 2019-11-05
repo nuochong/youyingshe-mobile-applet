@@ -12,6 +12,8 @@
 	"compileType": "miniprogram",
 	"appid": "wx4ae47ecd39abbd57",
 	"projectname": "youyingshe-mobile-applet",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,

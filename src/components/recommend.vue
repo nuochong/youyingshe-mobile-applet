@@ -11,7 +11,7 @@
           <div class="recommend-note">
             <div class="recommend-wrap">
               <span class="stats-comp">
-                <div class="recommend-img" style={this.state.bg}>
+                <div class="recommend-img" style="background-image: url('/static/images/18354189-e9e9a30bcfda6c4b.jpg')">
                   &nbsp;
                 </div>
                 <div class="author">
