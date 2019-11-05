@@ -55,7 +55,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-/**/
 .article-recommend {
   padding: 0 18px;
   .top-title {
