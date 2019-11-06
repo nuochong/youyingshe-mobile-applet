@@ -1,6 +1,6 @@
 <template>
   <div class="article-write-btn-wrap">
-    <button class="article-write-btn" :class="{'article-write-btn-hidden':isHidden}">
+    <button class="article-write-btn" :class="{'article-write-btn-hidden':isHidden}" @click="targetWrite">
       <i class="iconfont iconadd"></i>
       写文章
     </button>
@@ -20,7 +20,11 @@ export default {
     };
   },
   components: {},
-  methods: {},
+  methods: {
+    targetWrite(){
+      wx.navigateTo({ url: '/pages/write/main' });
+    }
+  },
   created() {},
   //监听屏幕滚动 判断上下滚动
   onPageScroll: function(ev) {
