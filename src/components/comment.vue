@@ -3,7 +3,7 @@
     <section class="article-comment">
       <div class="top-title">
         暂无评论
-        <button class="write-comment">
+        <button class="write-comment" @click="changeShowComment">
           <i class="iconfont iconwrite" />
           写评论
         </button>
@@ -16,16 +16,17 @@
               咩~
             </div>
           </div> -->
-      <!-- <div class="comment-wrapper">
-            <textarea id="comment" placeholder="写下你的评论..." />
-            <div id="backdrop-g1y" class="backdrop show" />
+      <div class="comment-wrapper" v-if="isShowComment">
+        <textarea id="comment" placeholder="写下你的评论..." />
+        <div id="backdrop-g1y" class="backdrop show" >
             <div class="drawer comment-reply-drawer">
               <div class="control">
-                <button class="cancel">取消</button>
+                <button class="cancel" @click="changeShowComment">取消</button>
                 <button class="submit">确认</button>
               </div>
             </div>
-          </div> -->
+          </div>
+      </div>
 
       <div class="comments-wrap">
         <div class="comment-item">
@@ -133,12 +134,15 @@
 export default {
   data() {
     return {
-      title: 'components'
+      title: 'components',
+      isShowComment: false
     };
   },
   components: {},
   methods: {
-    sample() {}
+    changeShowComment() {
+      this.isShowComment = !this.isShowComment;
+    }
   },
   created() {}
 };
