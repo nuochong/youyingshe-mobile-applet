@@ -1,9 +1,7 @@
 <template>
   <div class="article-preview-btn-wrap">
     <div class="article-preview-btn-placeholder"></div>
-    <div class="article-preview-btn">
-      保存并发布
-    </div>
+    <div class="article-preview-btn" v-text="text"></div>
   </div>
 </template>
 

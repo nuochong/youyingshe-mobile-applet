@@ -6,7 +6,7 @@
         我是测试数据我是测试数据我是测试数据我是测试数据我是测试数据我是测试数据
       </textarea>
     </div>
-    <article-write-btn-one></article-write-btn-one>
+    <article-write-btn-one text="保存"></article-write-btn-one>
   </div>
 </template>
 

@@ -6,7 +6,7 @@
       <p>其中，新的软件包有93个，新的数据包15个，新的注释包2个，大量的旧包都进行了一波更新。</p>
       <p>接下来推荐几个值得关注的最新软件包，以及一些经典包的重要更新。</p>
     </div>
-    <article-write-btn-one></article-write-btn-one>
+    <article-write-btn-one text="保存并发布"></article-write-btn-one>
   </div>
 </template>
 
