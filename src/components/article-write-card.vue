@@ -1,6 +1,25 @@
 <template>
-  <div class="article-footer-panel">
-    卡片
+  <div class="article-write-card">
+    <div class="article-card-btn-wrap">
+      <button class="article-card-btn" @click="open">
+        <i class="iconfont iconadd"></i>
+        添加
+      </button>
+      <div class="article-card-panel">
+        <div class="article-card-panel-close">
+          <i class="iconfont iconhebingxingzhuang"></i>
+        </div>
+        <div class="article-card-panel-top">
+          <i class="iconfont iconshang"></i>
+        </div>
+        <div class="article-card-panel-bottom">
+          <i class="iconfont iconbottom"></i>
+        </div>
+        <div class="article-card-content" @click="targetArticleEdit">
+          测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -15,45 +34,61 @@ export default {
   },
   components: {},
   methods: {
-    targetArticlePreview() {
-      wx.navigateTo({ url: '/pages/article-preview/main' });
+    targetArticleEdit() {
+      wx.navigateTo({ url: '/pages/article-edit/main' });
     }
-  },
-  created() {}
+  }
 };
 </script>
 
 <style lang="scss" scoped>
 /* ArticleFooter */
-.article-footer-placeholder {
-  display: block;
-  height: 60px;
-}
-.article-footer-container {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 60px;
-  border-top: 1px solid rgb(220, 220, 220);
-  background-color: white;
-  z-index: 2;
-  padding:10px 0;
-  .article-footer-wrap {
-    display: flex;
-    i {
-      color: #ea6f5a;
+.article-write-card {
+  margin-bottom: 15px;
+  .article-card-btn-wrap {
+    text-align: center;
+
+    .article-card-btn {
+      background-color: white;
+      border: 1px solid gray;
+      height: 28px;
+      line-height: 28px;
+      border-radius: 14px;
+      font-size: 14px;
+      margin-bottom: 15px;
+      .iconfont {
+      }
     }
-    .article-footer-btn {
-      height: 40px;
-      line-height:40px;
-      text-align: center;
-    }
-    .article-footer-home {
-      flex: 1;
-    }
-    .article-footer-share {
-      flex: 1;
-      border-left: 1px solid rgb(220, 220, 220);
+    .article-card-panel {
+      background-color: white;
+      position: relative;
+      .article-card-panel-close {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        .iconfont {
+        }
+      }
+      .article-card-panel-top {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        .iconfont {
+        }
+      }
+      .article-card-panel-bottom {
+        position: absolute;
+        right: 5px;
+        bottom: 5px;
+        .iconfont {
+        }
+      }
+      .article-card-content {
+        margin: 0 25px;
+        padding: 15px 0;
+        min-height: 140px;
+        text-align: left;
+      }
     }
   }
 }

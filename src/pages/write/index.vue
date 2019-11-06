@@ -1,5 +1,11 @@
 <template>
-  <div>
+  <div class="article-write-container">
+    <div class="article-write-title">
+      <input type="text" name="title" id="title" placeholder="点击输入标题"/>
+    </div>
+    <article-write-card></article-write-card>
+    <article-write-card></article-write-card>
+    <article-write-card></article-write-card>
     <article-write-card></article-write-card>
     <article-write-footer></article-write-footer>
   </div>
@@ -27,4 +33,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.article-write-container{
+    background-color: #dfdfdf;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    .article-write-title{
+      background-color: white;
+      margin-bottom: 15px;
+      padding: 15px;
+      input{
+        height: 30px;
+      }
+    }
+}
 </style>
