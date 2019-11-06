@@ -1,11 +1,17 @@
 <template>
-  <div>
-    <card :text="title"></card>
+  <div class="article-edit-container">
+    <div class="article-edit-content">
+      <textarea name="content" id="" cols="30" rows="10">
+        我是测试数据我是测试数据我是测试数据我是测试数据我是测试数据我是测试数据
+        我是测试数据我是测试数据我是测试数据我是测试数据我是测试数据我是测试数据
+      </textarea>
+    </div>
+    <article-write-btn-one></article-write-btn-one>
   </div>
 </template>
 
 <script>
-import card from '@/components/card';
+import articleWriteBtnOne from '@/components/article-write-btn-one';
 
 export default {
   data() {
@@ -14,7 +20,7 @@ export default {
     };
   },
   components: {
-    card
+    articleWriteBtnOne
   },
   methods: {
     sample() {}
@@ -24,4 +30,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.article-edit-container {
+  .article-edit-content {
+    padding: 15px;
+    padding-bottom: 60px;
+    textarea {
+      width: 100%;
+    }
+  }
+}
 </style>

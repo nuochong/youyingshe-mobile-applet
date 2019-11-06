@@ -6,17 +6,12 @@
       <p>其中，新的软件包有93个，新的数据包15个，新的注释包2个，大量的旧包都进行了一波更新。</p>
       <p>接下来推荐几个值得关注的最新软件包，以及一些经典包的重要更新。</p>
     </div>
-    <div class="article-preview-btn-wrap">
-      <div class="article-preview-btn-placeholder"></div>
-      <div class="article-preview-btn">
-        保存并发布
-      </div>
-    </div>
+    <article-write-btn-one></article-write-btn-one>
   </div>
 </template>
 
 <script>
-import card from '@/components/card';
+import articleWriteBtnOne from '@/components/article-write-btn-one';
 
 export default {
   data() {
@@ -25,7 +20,7 @@ export default {
     };
   },
   components: {
-    card
+    articleWriteBtnOne
   },
   methods: {
     sample() {}
@@ -51,22 +46,6 @@ export default {
       margin: 0 0 25px;
     }
   }
-  .article-preview-btn-wrap {
-    .article-preview-btn-placeholder {
-      height: 60px;
-    }
-    .article-preview-btn {
-      text-align: center;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      height: 60px;
-      line-height: 60px;
-      border-top: 1px solid rgb(220, 220, 220);
-      background-color: #ea6f5a;
-      color: white;
-      flex: 1;
-    }
-  }
+
 }
 </style>
