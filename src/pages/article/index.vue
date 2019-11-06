@@ -23,7 +23,7 @@ import serial from '@/components/serial';
 export default {
   data() {
     return {
-      title: 'components'
+      title: 'title'
     };
   },
   components: {

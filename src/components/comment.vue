@@ -135,7 +135,7 @@
 export default {
   data() {
     return {
-      title: 'components',
+      title: 'title',
       isShowComment: false
     };
   },

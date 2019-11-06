@@ -77,7 +77,7 @@ import articleFooter from '@/components/article-footer';
 export default {
   data() {
     return {
-      title: 'components',
+      title: 'title',
       isShowInput: true
     };
   },

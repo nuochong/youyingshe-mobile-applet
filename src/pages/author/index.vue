@@ -13,7 +13,7 @@ import articleList from '@/components/article-list';
 export default {
   data() {
     return {
-      title: 'components'
+      title: 'title'
     };
   },
   components: {

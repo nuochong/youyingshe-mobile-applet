@@ -51,7 +51,7 @@ import articleWriteBtn from '@/components/article-write-btn';
 export default {
   data() {
     return {
-      title: 'components',
+      title: 'title',
       isInit: false
     };
   },

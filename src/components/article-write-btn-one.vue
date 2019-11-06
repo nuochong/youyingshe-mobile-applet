@@ -12,7 +12,7 @@ export default {
   props: ['text'],
   data() {
     return {
-      title: 'components'
+      title: 'title'
     };
   },
   components: {},

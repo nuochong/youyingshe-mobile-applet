@@ -24,7 +24,7 @@ export default {
   props: ['text'],
   data() {
     return {
-      title: 'components',
+      title: 'title',
       userInfo: {},
       show: false //用来控制显示与否的变量
     };

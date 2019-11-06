@@ -24,7 +24,7 @@ import articleWriteAdd from '@/components/article-write-add';
 export default {
   data() {
     return {
-      title: 'components'
+      title: 'title'
     };
   },
   components: {

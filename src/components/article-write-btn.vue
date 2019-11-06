@@ -14,7 +14,7 @@ export default {
   props: ['text'],
   data() {
     return {
-      title: 'components',
+      title: 'title',
       scrollTop: 0,
       isHidden: false
     };

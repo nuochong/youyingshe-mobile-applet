@@ -29,7 +29,7 @@
 export default {
   data() {
     return {
-      title: 'components'
+      title: 'title'
     };
   },
   components: {},

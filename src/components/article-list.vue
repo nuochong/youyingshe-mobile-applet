@@ -49,7 +49,7 @@ export default {
   props: ['text'],
   data() {
     return {
-      title: 'components',
+      title: 'title',
       isShowDirectory: false,
       list: [0, 2, 3, 4]
     };

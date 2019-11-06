@@ -16,7 +16,7 @@ import articleWriteBtnOne from '@/components/article-write-btn-one';
 export default {
   data() {
     return {
-      title: 'components'
+      title: 'title'
     };
   },
   components: {

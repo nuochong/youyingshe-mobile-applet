@@ -26,7 +26,7 @@ import card from '@/components/card';
 export default {
   data() {
     return {
-      title: 'components'
+      title: 'title'
     };
   },
   components: {

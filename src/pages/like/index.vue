@@ -10,7 +10,7 @@ import cardArticleList from '@/components/card-article-list';
 export default {
   data() {
     return {
-      title: 'components'
+      title: 'title'
     };
   },
   components: {
