@@ -1,7 +1,7 @@
 <template>
   <div>
     <user-info></user-info>
-    <hr/>
+    <hr />
     <article-list></article-list>
   </div>
 </template>

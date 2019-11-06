@@ -48,7 +48,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.sec-nav{
+.sec-nav {
   z-index: 1000;
 }
 .article-write-container {

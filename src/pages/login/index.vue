@@ -80,7 +80,7 @@ export default {
       }
     }
     .login-btn-wrap {
-      padding:0 15px;
+      padding: 0 15px;
       .btn {
         width: 100%;
         margin: 0;
