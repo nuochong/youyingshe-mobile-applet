@@ -45,8 +45,7 @@
             <div class="image-container">
               <div class="image-container-fill" />
               <div class="image-view">
-                <img
-                  src="https://upload-images.jianshu.io/upload_images/2259045-9348eb9aa7465776?imageMogr2/auto-orient/strip%7CimageView2/2/w/700/format/webp" />
+                <img src="/static/images/12676667-c84a3febcb3b2c2a.webp" mode='widthFix' />
               </div>
             </div>
             <div class="image-caption">第一组花瓣，完全在试色当中</div>
