@@ -508,7 +508,6 @@ export default {
                 border-radius: 3px;
                 vertical-align: middle;
                 display: inline-block;
-                height: 20px;
                 line-height: 16px;
                 margin-top: -4px;
               }
