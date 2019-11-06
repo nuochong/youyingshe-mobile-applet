@@ -1,11 +1,11 @@
 <template>
   <div>
-    <card :text="title"></card>
+    <article-write-footer></article-write-footer>
   </div>
 </template>
 
 <script>
-import card from '@/components/card';
+import articleWriteFooter from '@/components/article-write-footer';
 
 export default {
   data() {
@@ -14,7 +14,7 @@ export default {
     };
   },
   components: {
-    card
+    articleWriteFooter
   },
   methods: {
     sample() {}
