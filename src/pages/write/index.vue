@@ -30,7 +30,7 @@ import navigationBar from '../../components/navigationBar.vue';
 export default {
   data() {
     return {
-      title: 'components'
+      title: '写文章'
     };
   },
   components: {
