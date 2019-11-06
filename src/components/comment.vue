@@ -11,7 +11,7 @@
 
 
       <div class="no-content">
-        <img src="/static/images/icon_comment_no.1b12627d.png" />
+        <img src="/static/images/icon_comment_no.1b12627d.png" mode="aspectFill" />
         <div>
           智慧如你，不想
           <button class="reply-btn">发表一点想法</button>
