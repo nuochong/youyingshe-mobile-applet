@@ -4,7 +4,7 @@
     <div class="my-wrap-empty" v-if="isInit">
       <img class="my-empty" src="/static/images/empty.png" />
       <article-write-btn></article-write-btn>
-      <button class="btn btn-success">
+      <button class="btn btn-success" @click="targetQuikLogin">
         <i class="iconfont iconweixin"></i>
         微信一键登录</button>
       <button class="btn btn-primary" @click="targetLogin">已有简书账号登录</button>
@@ -52,7 +52,7 @@ export default {
   data() {
     return {
       title: 'components',
-      isInit: true
+      isInit: false
     };
   },
   components: {
@@ -67,6 +67,9 @@ export default {
     },
     targetLike() {
       wx.navigateTo({ url: '/pages/like/main' });
+    },
+    targetQuikLogin() {
+      this.isInit = false;
     },
     targetInit() {
       this.isInit = true;
@@ -103,7 +106,7 @@ export default {
       margin-bottom: 15px;
       border-radius: 5px;
       padding: 10px;
-      border: 1px solid rgba(0,0,0,.2);
+      border: 1px solid rgba(0, 0, 0, 0.2);
     }
     .btn-primary {
       background-color: #f8f8f8;
