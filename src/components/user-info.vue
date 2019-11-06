@@ -28,9 +28,9 @@
           <i class="iconfont iconadd" />
           关注
         </button>
-        <a href="javascript:;" class="btn reward-btn">
+        <button class="btn-money reward-btn">
           赞赏作者
-        </a>
+        </button>
       </div>
     </div>
   </div>
@@ -124,7 +124,7 @@ export default {
         border: 1px solid #42c02e;
         color: #fff;
       }
-      .btn {
+      .btn-money {
         height: 40px;
         line-height: 40px;
         display: inline-block;
