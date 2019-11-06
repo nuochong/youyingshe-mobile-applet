@@ -5,11 +5,11 @@
       <!-- <div class="article-add-mask"></div> -->
       <div class="article-add-panel-wrap">
         <div class="article-add-panel" id="personalInfo">
-          <div class="article-add-list article-add-img">
+          <div class="article-add-list article-add-img" @click="targetImg">
             <i class="iconfont iconimages"></i>
             图片
           </div>
-          <div class="article-add-list article-add-text">
+          <div class="article-add-list article-add-text" @click="targetText">
             <i class="iconfont iconwenzi"></i>
             文字
           </div>
@@ -25,13 +25,21 @@ export default {
   props: ['text'],
   data() {
     return {
-      title: 'components'
+      title: 'components',
+      userInfo: {},
+      show: false //用来控制显示与否的变量
     };
   },
   components: {},
   methods: {
     showList() {
       this.show = !this.show;
+    },
+    targetImg() {
+      console.log('点击了图片');
+    },
+    targetText() {
+      console.log('点击了文字');
     }
   },
   created() {}
