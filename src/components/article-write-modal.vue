@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button @click="showList">显示</button>
+    <!-- <button class="test" @click="showList">显示</button> -->
     <div class="article-add-container" id="rightBlock" @click="showList" v-if="show">
       <!-- <div class="article-add-mask"></div> -->
       <div class="article-add-panel-wrap">
@@ -50,6 +50,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.test {
+  margin: 0 auto;
+}
 #rightBlock {
   top: 0;
   display: block;
