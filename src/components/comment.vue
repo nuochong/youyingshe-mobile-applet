@@ -11,7 +11,7 @@
 
 
       <div class="no-content">
-        <img src="https://cdn2.jianshu.io/asimov/src/assets/image/note/icon_comment_no.1b12627d.png" />
+        <img src="/static/images/icon_comment_no.1b12627d.png" />
         <div>
           智慧如你，不想
           <button class="reply-btn">发表一点想法</button>
