@@ -1,19 +1,6 @@
 <template>
   <div class="article-footer-panel">
-    <div class="article-footer-placeholder">
-
-    </div>
-    <section class="article-footer-container">
-      <div class="article-footer-wrap">
-        <!-- 底部菜单 -->
-        <div class="article-footer-btn article-footer-home" @click="targetArticlePreview">
-          预览
-        </div>
-        <div class="article-footer-btn article-footer-share">
-          保存并发布
-        </div>
-      </div>
-    </section>
+    卡片
   </div>
 </template>
 
