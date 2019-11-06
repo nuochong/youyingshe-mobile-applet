@@ -1,10 +1,10 @@
 {
   "pages": [
+    "pages/home/main",
     "pages/author/main",
     "pages/write/main",
     "pages/article-edit/main",
     "pages/article-preview/main",
-    "pages/home/main",
     "pages/article/main",
     "pages/directory/main",
     "pages/admire/main",
