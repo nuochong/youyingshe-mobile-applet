@@ -2,7 +2,6 @@
   <div class="flow-container">
     <card-article-list></card-article-list>
     <article-write-btn></article-write-btn>
-    <div @click="targetLike()">喜欢文章</div>
     <!-- <button @click="toast()">toast</button> -->
   </div>
 </template>
@@ -24,9 +23,6 @@ export default {
   methods: {
     toast() {
       this.toastNone('测试信息');
-    },
-    targetLike() {
-      wx.navigateTo({ url: '/pages/like/main' });
     }
   },
   created() {
