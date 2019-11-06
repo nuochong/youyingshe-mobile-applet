@@ -10,10 +10,9 @@
       </div>
 
       <div class="no-content">
-        <img src="/static/images/icon_comment_no.1b12627d.png" mode="aspectFill" />
+        <img src="/static/images/icon_comment_no.1b12627d.png" mode="widthFix"/>
         <div>
-          智慧如你，不想
-          <button class="reply-btn">发表一点想法</button>
+          智慧如你，不想          <button class="reply-btn">发表一点想法</button>
           咩~
         </div>
       </div>
@@ -183,8 +182,6 @@ export default {
     img {
       padding-bottom: 10px;
       width: 140px;
-      max-width: 100%;
-      border-style: none;
     }
     button {
       color: #3194d0;
