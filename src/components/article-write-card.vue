@@ -45,6 +45,9 @@ export default {
   .article-card-panel {
     background-color: white;
     position: relative;
+    i{
+      color:#898989;
+    }
     .article-card-panel-close {
       position: absolute;
       top: 5px;
@@ -67,7 +70,7 @@ export default {
       }
     }
     .article-card-content {
-      margin: 0 25px;
+      margin: 0 30px;
       padding: 15px 0;
       min-height: 140px;
       text-align: left;

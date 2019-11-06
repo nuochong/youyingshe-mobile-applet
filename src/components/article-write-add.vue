@@ -31,7 +31,8 @@ export default {
   text-align: center;
   .article-card-btn {
     background-color: white;
-    border: 1px solid gray;
+    border: 1px solid rgb(177, 177, 177);
+    color:#898989;
     height: 28px;
     line-height: 28px;
     border-radius: 14px;
