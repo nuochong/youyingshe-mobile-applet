@@ -29,7 +29,7 @@ export default {
   //监听屏幕滚动 判断上下滚动
   onPageScroll: function(ev) {
     let _this = this;
-    console.log('ev', ev);
+    //console.log('ev', ev);
     //当滚动的top值最大或最小时，为什么要做这一步是因为在手机实测小程序的时候会发生滚动条回弹，所以为了处理回弹，设置默认最大最小值
     if (ev.scrollTop <= 0) {
       ev.scrollTop = 0;
