@@ -45,8 +45,8 @@ export default {
   .article-card-panel {
     background-color: white;
     position: relative;
-    i{
-      color:#898989;
+    i {
+      color: #898989;
     }
     .article-card-panel-close {
       position: absolute;

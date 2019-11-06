@@ -21,7 +21,7 @@ export default {
   },
   components: {},
   methods: {
-    targetWrite(){
+    targetWrite() {
       wx.navigateTo({ url: '/pages/write/main' });
     }
   },

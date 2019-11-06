@@ -10,9 +10,9 @@
       </div>
 
       <div class="no-content">
-        <img src="/static/images/icon_comment_no.1b12627d.png" mode="widthFix"/>
+        <img src="/static/images/icon_comment_no.1b12627d.png" mode="widthFix" />
         <div>
-          智慧如你，不想          <button class="reply-btn">发表一点想法</button>
+          智慧如你，不想 <button class="reply-btn">发表一点想法</button>
           咩~
         </div>
       </div>

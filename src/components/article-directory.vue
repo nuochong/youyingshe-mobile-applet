@@ -364,7 +364,7 @@ export default {
   height: 667px;
 }
 #book-chapters-drawer-wrap {
-    .hidden {
+  .hidden {
     visibility: hidden;
   }
   .change1 {

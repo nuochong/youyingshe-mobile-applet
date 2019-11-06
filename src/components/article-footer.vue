@@ -50,7 +50,7 @@ export default {
   border-top: 1px solid rgb(220, 220, 220);
   background-color: white;
   z-index: 2;
-  padding:10px 0;
+  padding: 10px 0;
   .article-footer-wrap {
     display: flex;
     i {
@@ -58,7 +58,7 @@ export default {
     }
     .article-footer-btn {
       height: 40px;
-      line-height:40px;
+      line-height: 40px;
       text-align: center;
     }
     .article-footer-home {
