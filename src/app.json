@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/my/main",
     "pages/home/main",
     "pages/author/main",
     "pages/write/main",
@@ -8,7 +9,6 @@
     "pages/article/main",
     "pages/directory/main",
     "pages/admire/main",
-    "pages/my/main",
     "pages/award/main",
     "pages/history/main",
     "pages/like/main",

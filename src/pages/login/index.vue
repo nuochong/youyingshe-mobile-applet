@@ -11,9 +11,11 @@
           <input type="text" name="" id="" placeholder="请输入密码">
         </div>
       </div>
-      <button class="btn btn-danger" @click="signIn()">
-        登录
-      </button>
+      <div class="login-btn-wrap">
+        <button class="btn btn-danger" @click="signIn">
+          登录
+        </button>
+      </div>
     </div>
   </div>
 </template>
@@ -77,11 +79,22 @@ export default {
         border-bottom: none;
       }
     }
-    .btn.btn-danger {
-      background-color: #ea6f5a;
-      color: white;
-      &.button-hover {
-        background-color: #e2705b !important;
+    .login-btn-wrap {
+      padding:0 15px;
+      .btn {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        padding: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        &.btn-danger {
+          background-color: #ea6f5a;
+          color: white;
+          &.button-hover {
+            background-color: #e2705b !important;
+          }
+        }
       }
     }
   }

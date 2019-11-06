@@ -1,15 +1,16 @@
 <template>
   <div class="my-container">
 
-    <!-- <div class="my-wrap-empty">
+    <div class="my-wrap-empty" v-if="isInit">
       <img class="my-empty" src="/static/images/empty.png" />
       <article-write-btn></article-write-btn>
       <button class="btn btn-success">
         <i class="iconfont iconweixin"></i>
         微信一键登录</button>
-      <button class="btn btn-primary" @click="targetLogin()">已有简书账号登录</button>
-    </div> -->
-    <div class="my-wrap-setting">
+      <button class="btn btn-primary" @click="targetLogin">已有简书账号登录</button>
+    </div>
+
+    <div class="my-wrap-setting" v-if="!isInit">
       <div class="my-info">
         <div class="avator">
           <img
@@ -20,14 +21,14 @@
         <div class="name">用户名</div>
       </div>
       <ul class="setting-list">
-        <li class="setting-list-li" @click="targetHistory()">
+        <li class="setting-list-li" @click="targetHistory">
           <div class="setting-list-liWrap">
             <i class="iconfont iconhistory setting-list-img"></i>
             <span>最近阅读的记录</span>
             <i class="iconfont iconleft"></i>
           </div>
         </li>
-        <li class="setting-list-li" @click="targetLike()">
+        <li class="setting-list-li" @click="targetLike">
           <div class="setting-list-liWrap">
             <i class="iconfont iconhome_ico_like- setting-list-img"></i>
             <span>喜欢文章</span>
@@ -35,13 +36,12 @@
           </div>
         </li>
       </ul>
-      <div class="change-login">
+      <div class="change-login" @click="targetInit">
         <span class="change-login-text">
           切换账号
         </span>
       </div>
     </div>
-
   </div>
 </template>
 
@@ -51,7 +51,8 @@ import articleWriteBtn from '@/components/article-write-btn';
 export default {
   data() {
     return {
-      title: 'components'
+      title: 'components',
+      isInit: true
     };
   },
   components: {
@@ -66,6 +67,9 @@ export default {
     },
     targetLike() {
       wx.navigateTo({ url: '/pages/like/main' });
+    },
+    targetInit() {
+      this.isInit = true;
     }
   },
   created() {}
@@ -93,11 +97,19 @@ export default {
       width: 240px;
       margin-top: 80px;
     }
+    .btn {
+      width: 100%;
+      margin: 0;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      padding: 10px;
+      border: 1px solid rgba(0,0,0,.2);
+    }
     .btn-primary {
       background-color: #f8f8f8;
-      &:hover {
+      &.button-hover {
         color: rgba(0, 0, 0, 0.6);
-        background-color: #dedede;
+        background-color: #eeeeee;
       }
     }
     .btn-success {
