@@ -20,6 +20,9 @@ export default {
   methods: {
     targetArticleEdit() {
       wx.navigateTo({ url: '/pages/article-edit/main' });
+    },
+    open() {
+      this.bus.$emit('getTarget', true);
     }
   }
 };
@@ -32,7 +35,7 @@ export default {
   .article-card-btn {
     background-color: white;
     border: 1px solid rgb(177, 177, 177);
-    color:#898989;
+    color: #898989;
     height: 28px;
     line-height: 28px;
     border-radius: 14px;

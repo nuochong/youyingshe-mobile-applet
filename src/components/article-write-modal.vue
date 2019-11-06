@@ -41,7 +41,11 @@ export default {
       console.log('点击了文字');
     }
   },
-  created() {}
+  created() {
+    this.bus.$on('getTarget', target => {
+      target && this.showList();
+    });
+  }
 };
 </script>
 
