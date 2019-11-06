@@ -1,11 +1,11 @@
 <template>
   <div>
-    <card :text="title"></card>
+    <templeteComponents :text="title"></templeteComponents>
   </div>
 </template>
 
 <script>
-import card from '@/components/card';
+import templeteComponents from '@/components/templete-components';
 
 export default {
   data() {
@@ -14,7 +14,7 @@ export default {
     };
   },
   components: {
-    card
+    templeteComponents
   },
   methods: {
     sample() {}
