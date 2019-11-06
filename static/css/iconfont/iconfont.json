@@ -34,6 +34,13 @@
       "unicode_decimal": 58936
     },
     {
+      "icon_id": "420204",
+      "name": "文字",
+      "font_class": "wenzi",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
       "icon_id": "491582",
       "name": "钻石",
       "font_class": "zuanshi",
@@ -151,6 +158,13 @@
       "font_class": "home_ico_like-",
       "unicode": "e622",
       "unicode_decimal": 58914
+    },
+    {
+      "icon_id": "6222950",
+      "name": "图片",
+      "font_class": "images",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
     },
     {
       "icon_id": "6685784",

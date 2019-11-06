@@ -1,13 +1,31 @@
 <template>
   <div class="article-write-container">
     <div class="article-write-title">
-      <input type="text" name="title" id="title" placeholder="点击输入标题"/>
+      <input type="text" name="title" id="title" placeholder="点击输入标题" />
     </div>
     <article-write-card></article-write-card>
     <article-write-card></article-write-card>
     <article-write-card></article-write-card>
     <article-write-card></article-write-card>
     <article-write-add></article-write-add>
+    <div class="article-add-container" id="rightBlock" @click="showList" v-if="show">
+      <!-- <div class="article-add-mask"></div> -->
+      <div class="article-add-panel-wrap">
+        <div class="article-add-panel" id="personalInfo">
+          <div class="article-add-list article-add-img">
+            <i class="iconfont iconimages"></i>
+            图片
+          </div>
+          <div class="article-add-list article-add-text">
+            <i class="iconfont iconwenzi"></i>
+            文字
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <button @click="showList">显示</button>
     <article-write-footer></article-write-footer>
   </div>
 </template>
@@ -17,11 +35,12 @@ import articleWriteCard from '@/components/article-write-card';
 import articleWriteFooter from '@/components/article-write-footer';
 import articleWriteAdd from '@/components/article-write-add';
 
-
 export default {
   data() {
     return {
-      title: 'components'
+      title: 'components',
+      userInfo: {},
+      show: false //用来控制显示与否的变量
     };
   },
   components: {
@@ -30,25 +49,78 @@ export default {
     articleWriteAdd
   },
   methods: {
-    sample() {}
+    sample() {},
+    showList() {
+      this.show = !this.show;
+    }
   },
   created() {}
 };
 </script>
 
 <style lang="scss" scoped>
-.article-write-container{
-    background-color: #dfdfdf;
-    position: absolute;
+#rightBlock {
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 12;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.4);
+}
+#personalInfo {
+  display: block;
+  position: relative;
+  background: #ffffff;
+}
+
+.article-add-container {
+  .article-add-mask {
+    position: fixed;
     width: 100%;
     height: 100%;
-    .article-write-title{
-      background-color: white;
-      margin-bottom: 15px;
-      padding: 15px;
-      input{
-        height: 30px;
+    background-color: (255, 255, 255, 0.7);
+  }
+  .article-add-panel-wrap {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    .article-add-panel {
+      text-align: center;
+      border-radius: 10px;
+      width: 60%;
+      .article-add-list {
+        height: 80px;
+        line-height: 80px;
+        border-bottom: 1px solid gray;
+        &:last-child {
+          border-bottom: 0;
+        }
+      }
+      i {
+        color: #ea6f5a;
+      }
+      .article-add-img {
+      }
+      .article-add-text {
       }
     }
+  }
+}
+.article-write-container {
+  background-color: #dfdfdf;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  .article-write-title {
+    background-color: white;
+    margin-bottom: 15px;
+    padding: 15px;
+    input {
+      height: 30px;
+    }
+  }
 }
 </style>
