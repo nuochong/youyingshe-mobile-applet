@@ -21,9 +21,7 @@ export default {
       this.toastNone('测试信息');
     }
   },
-  created() {
-    //this.test();
-  }
+  created() {}
 };
 </script>
 
