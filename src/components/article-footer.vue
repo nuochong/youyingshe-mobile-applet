@@ -50,14 +50,15 @@ export default {
   border-top: 1px solid rgb(220, 220, 220);
   background-color: white;
   z-index: 2;
+  padding:10px 0;
   .article-footer-wrap {
     display: flex;
     i {
       color: #ea6f5a;
     }
     .article-footer-btn {
-      height: 60px;
-      line-height: 60px;
+      height: 40px;
+      line-height:40px;
       text-align: center;
     }
     .article-footer-home {

@@ -29,8 +29,9 @@
               <span>打开应用</span>
             </button>
             <div class="reader-mode-public reader-mode-iFw96_0">
-              <div class="light-mode-1sdus_0" onClick={this.showStyle}>
+              <div class="light-mode-1sdus_0" @click="showStyle">
                 <!-- <em class="day-a1Tt__0" className={['', this.state.isShowStyle ? 'day-a1Tt__0' : 'night-2BQDF_0'].join('')}></em> -->
+                <em :class="{ 'day-a1Tt__0':isShowStyle, 'night-2BQDF_0':!isShowStyle}"></em>
                 <span>白天</span>
               </div>
               <div class="font-size-2KUVN_0">
@@ -225,12 +226,15 @@
 export default {
   data() {
     return {
-      title: 'components'
+      title: 'components',
+      isShowStyle: false
     };
   },
   components: {},
   methods: {
-    sample() {}
+    showStyle() {
+      this.isShowStyle = !this.isShowStyle;
+    }
   },
   created() {}
 };
@@ -440,6 +444,7 @@ export default {
         color: #c7254e;
         background-color: #f6f6f6;
         display: inline-block;
+        line-height: 1;
       }
       code,
       kbd,

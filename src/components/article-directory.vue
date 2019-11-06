@@ -303,6 +303,9 @@ export default {
     font-size: 14px;
     padding-top: 15px;
     color: #333;
+
+    line-height: 1.15;
+    margin: 0;
   }
   .book-info {
     display: block;
