@@ -7,6 +7,7 @@
     <article-write-card></article-write-card>
     <article-write-card></article-write-card>
     <article-write-card></article-write-card>
+    <article-write-add></article-write-add>
     <article-write-footer></article-write-footer>
   </div>
 </template>
@@ -14,6 +15,8 @@
 <script>
 import articleWriteCard from '@/components/article-write-card';
 import articleWriteFooter from '@/components/article-write-footer';
+import articleWriteAdd from '@/components/article-write-add';
+
 
 export default {
   data() {
@@ -23,7 +26,8 @@ export default {
   },
   components: {
     articleWriteCard,
-    articleWriteFooter
+    articleWriteFooter,
+    articleWriteAdd
   },
   methods: {
     sample() {}
