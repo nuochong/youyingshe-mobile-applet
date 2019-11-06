@@ -1,6 +1,8 @@
 {
   "pages": [
     "pages/write/main",
+    "pages/article-preview/main",
+    "pages/article-edit/main",
     "pages/home/main",
     "pages/article/main",
     "pages/directory/main",
