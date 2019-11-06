@@ -274,6 +274,11 @@ export default {
 
 <style lang="scss" scoped>
 /* ArticleDirectory */
+.animation {
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
 .article-directory-placeholder {
   display: block;
   height: 46px;
@@ -357,7 +362,9 @@ export default {
 }
 #book-chapters-drawer-wrap {
   .hidden {
-    display: none;
+    //display: none;
+    right: -70%;
+    @extend .animation;
   }
   .change1 {
     top: 0px;
@@ -365,13 +372,15 @@ export default {
     width: 70%;
     right: 0px;
     //display: none;
+    @extend .animation;
   }
   .changeHidden {
     top: 0px;
     height: 100%;
     width: 70%;
-    right: 0px;
-    display: none;
+    right: -70%;
+    // display: none;
+    @extend .animation;
   }
   .drawer {
     padding: 0;
