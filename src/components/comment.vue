@@ -9,7 +9,6 @@
         </button>
       </div>
 
-
       <div class="no-content">
         <img src="/static/images/icon_comment_no.1b12627d.png" mode="aspectFill" />
         <div>
@@ -18,7 +17,6 @@
           咩~
         </div>
       </div>
-
 
       <div class="comment-wrapper" v-if="isShowComment">
         <textarea id="comment" placeholder="写下你的评论..." />
@@ -185,6 +183,8 @@ export default {
     img {
       padding-bottom: 10px;
       width: 140px;
+      max-width: 100%;
+      border-style: none;
     }
     button {
       color: #3194d0;

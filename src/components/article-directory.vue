@@ -429,7 +429,7 @@ export default {
     -webkit-transition-property: background-color;
     -o-transition-property: background-color;
     transition-property: background-color;
-    //visibility: hidden;
+    visibility: hidden;
     @extend .animation;
     &.show {
       background-color: rgba(0, 0, 0, 0.7);
