@@ -45,9 +45,6 @@ export default {
   },
   components: {},
   methods: {
-    toast() {
-      this.toastNone('测试信息');
-    },
     targetArticle() {
       wx.navigateTo({ url: '/pages/article/main' });
     },
@@ -55,9 +52,7 @@ export default {
       wx.navigateTo({ url: '/pages/author/main' });
     }
   },
-  created() {
-    this.test();
-  }
+  created() {}
 };
 </script>
 

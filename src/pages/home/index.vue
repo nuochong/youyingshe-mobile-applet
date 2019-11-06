@@ -2,7 +2,6 @@
   <div class="flow-container">
     <card-article-list></card-article-list>
     <article-write-btn></article-write-btn>
-    <!-- <button @click="toast()">toast</button> -->
   </div>
 </template>
 
@@ -20,14 +19,8 @@ export default {
     cardArticleList,
     articleWriteBtn
   },
-  methods: {
-    toast() {
-      this.toastNone('测试信息');
-    }
-  },
-  created() {
-    //this.test();
-  }
+  methods: {},
+  created() {}
 };
 </script>
 
