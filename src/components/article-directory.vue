@@ -14,7 +14,7 @@
     </div>
 
     <div id="book-chapters-drawer-wrap">
-      <div id="backdrop-r2u" class="backdrop" :class="{'show':isShowDirectory,'hidden':!isShowDirectory}" @click="showDirectory"></div>
+      <div id="backdrop-r2u" class="backdrop" :class="{'show':isShowDirectory}" @click="showDirectory"></div>
       <div class=" drawer book-chapters-drawer-header" :class="{'change1':isShowDirectory,'changeHidden':!isShowDirectory}">
         <div class="book-chapters-header">
           <span class="title">目录(共61篇)</span>
@@ -275,9 +275,12 @@ export default {
 <style lang="scss" scoped>
 /* ArticleDirectory */
 .animation {
-  -webkit-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -webkit-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
 }
 .article-directory-placeholder {
   display: block;
@@ -361,17 +364,14 @@ export default {
   height: 667px;
 }
 #book-chapters-drawer-wrap {
-  .hidden {
-    //display: none;
-    right: -70%;
-    @extend .animation;
+    .hidden {
+    visibility: hidden;
   }
   .change1 {
     top: 0px;
     height: 100%;
     width: 70%;
     right: 0px;
-    //display: none;
     @extend .animation;
   }
   .changeHidden {
@@ -379,7 +379,6 @@ export default {
     height: 100%;
     width: 70%;
     right: -70%;
-    // display: none;
     @extend .animation;
   }
   .drawer {
@@ -427,17 +426,15 @@ export default {
     bottom: 0;
     z-index: 11;
     background-color: transparent;
-    -webkit-transition-duration: 0.2s;
-    -o-transition-duration: 0.2s;
-    transition-duration: 0.2s;
     -webkit-transition-property: background-color;
     -o-transition-property: background-color;
     transition-property: background-color;
+    //visibility: hidden;
+    @extend .animation;
     &.show {
-      -webkit-transition-timing-function: linear;
-      -o-transition-timing-function: linear;
-      transition-timing-function: linear;
-      background-color: rgba(0, 0, 0, 0.6);
+      background-color: rgba(0, 0, 0, 0.7);
+      visibility: visible;
+      @extend .animation;
     }
   }
   //侧栏身体
