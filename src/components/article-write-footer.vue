@@ -1,8 +1,6 @@
 <template>
   <div class="article-footer-panel">
-    <div class="article-footer-placeholder">
-
-    </div>
+    <div class="article-footer-placeholder"></div>
     <section class="article-footer-container">
       <div class="article-footer-wrap">
         <!-- 底部菜单 -->
@@ -50,21 +48,23 @@ export default {
   border-top: 1px solid rgb(220, 220, 220);
   background-color: white;
   z-index: 2;
-  padding:10px 0;
+  // padding:10px 0;
   .article-footer-wrap {
     display: flex;
     i {
       color: #ea6f5a;
     }
     .article-footer-btn {
-      height: 40px;
-      line-height:40px;
+      height: 60px;
+      line-height:60px;
       text-align: center;
     }
     .article-footer-home {
       flex: 1;
     }
     .article-footer-share {
+      background-color: #ea6f5a;
+      color: white;
       flex: 1;
       border-left: 1px solid rgb(220, 220, 220);
     }
