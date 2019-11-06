@@ -24,7 +24,7 @@
 </template>
 
 <script>
-// import card from '@/components/card';
+// import card from '@/components/templete-components';
 
 export default {
   data() {

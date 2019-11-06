@@ -18,7 +18,7 @@
 
 <script>
 import { formatTime } from '@/utils/index';
-import card from '@/components/card';
+import card from '@/components/templete-components';
 
 export default {
   components: {
