@@ -66,7 +66,7 @@
           <pre class="hljs R">
             <code class="undefined">library(BiocManager)</code>
           </pre>
-          <p>其它具体的更新信息，可以参考<a href="https://links.jianshu.com/go?to=https%3A%2F%2Fwww.bioconductor.org%2Fnews%2Fbioc_3_10_release%2F" target="_blank">官方说明</a>。
+          <p>其它具体的更新信息，可以参考<a href="javascript:;" target="_blank">官方说明</a>。
           </p>
         </div>
         <div class="article-copyright">© 著作权归作者所有,转载或内容合作请联系作者</div>
